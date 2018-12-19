@@ -17,6 +17,7 @@
 defined('ABSPATH') || exit;
 
 $use_type_parameters = array();
+$parameters['use_type_error'] = false;
 
 if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 	
@@ -24,10 +25,9 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 	if (strpos(dirname(__FILE__), 'plugins')) {
 		
 		add_action( 'admin_notices', function() {
-			echo '<div id="message" class="error"><p><strong>'. __( 'Options panel is being used in a plugin. Please set "<em>use_type</em>" parameter to "<em>plugin</em>".', 'dilaz-panel' ) .'</strong></p></div>';
+			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Wrong use-type for admin options. Please set "<em>use_type</em>" parameter to "<em>plugin</em>" in "<em>%s</em>".', 'dilaz-panel' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/admin.php' ) .'</strong></p></div>';
 		});
 		
-		# set use type error
 		$parameters['use_type_error'] = true;
 		
 	} else {
@@ -40,7 +40,7 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 		$use_type_parameters = array(
 			'item_name'    => $theme_name,
 			'item_version' => $theme_version,
-			'dir_url'      => get_template_directory_uri() . wp_normalize_path(explode($theme_name_lc, explode('includes', dirname(__FILE__))[0])[2]),
+			'dir_url'      => trailingslashit(get_template_directory_uri() . wp_normalize_path(explode($theme_name_lc, explode('includes', dirname(__FILE__))[0])[2])),
 		);
 	}
 
@@ -50,7 +50,7 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 	if (strpos(dirname(__FILE__), 'themes')) {
 		
 		add_action( 'admin_notices', function() {
-			echo '<div id="message" class="error"><p><strong>'. __( 'Options panel is being used in a theme. Please set "<em>use_type</em>" parameter to "<em>theme</em>".', 'dilaz-panel' ) .'</strong></p></div>';
+			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Wrong use-type for admin options. Please set "<em>use_type</em>" parameter to "<em>theme</em>" in "<em>%s</em>".', 'dilaz-panel' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/admin.php' ) .'</strong></p></div>';
 		});
 		
 		# set use type error
@@ -80,7 +80,7 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 		$use_type_parameters = array(
 			'item_name'    => $plugin_name,
 			'item_version' => $plugin_version,
-			'dir_url'      => trailingslashit(explode($plugin_name_lc, plugin_dir_url(__FILE__))[0] . $plugin_name_lc),
+			'dir_url'      => trailingslashit(explode($plugin_name_lc, plugin_dir_url(__FILE__))[0] . $plugin_name_lc .'/'. $dilaz_admin_folder),
 		);
 	}
 }

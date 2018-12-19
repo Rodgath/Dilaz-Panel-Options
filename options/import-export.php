@@ -16,60 +16,51 @@
 
 defined('ABSPATH') || exit;
 
-/**
- * Define the options' fields
- *
- * @param	array $options
- * @return	array
- */
-if (isset($parameters['import_export']) && $parameters['import_export'] == true) {
+
+# MAIN TAB - Export / Import
+# =============================================================================================
+$options[] = array(
+	'name' => __('Export / Import', 'dilaz-panel'),
+	'type' => 'heading',
+	'icon' => 'fa-cloud'
+);
 	
-	# MAIN TAB - Export / Import
-	# =============================================================================================
+	# SUB TAB - Export
+	# *****************************************************************************************
 	$options[] = array(
-		'name' => __('Export / Import', 'dilaz-panel'),
-		'type' => 'heading',
-		'icon' => 'fa-cloud'
+		'name' => __('Export', 'dilaz-panel'),
+		'type' => 'subheading',
 	);
 		
-		# SUB TAB - Export
-		# *****************************************************************************************
+		# FIELDS - Export
+		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$options[] = array(
-			'name' => __('Export', 'dilaz-panel'),
-			'type' => 'subheading',
+			'id'    => 'export',
+			'name'  => __('Export', 'dilaz-panel'),
+			'desc'  => __('Export', 'dilaz-panel'),
+			'type'  => 'export',
+			'std'   => '',
+			'class' => ''
 		);
-			
-			# FIELDS - Export
-			# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-			$options[] = array(
-				'id'    => 'export',
-				'name'  => __('Export', 'dilaz-panel'),
-				'desc'  => __('Export', 'dilaz-panel'),
-				'type'  => 'export',
-				'std'   => '',
-				'class' => ''
-			);
+	
+	# SUB TAB - Import
+	# *****************************************************************************************
+	$options[] = array(
+		'name' => __('Import', 'dilaz-panel'),
+		'type' => 'subheading',
+	);
 		
-		# SUB TAB - Import
-		# *****************************************************************************************
+		# FIELDS - Import
+		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$options[] = array(
-			'name' => __('Import', 'dilaz-panel'),
-			'type' => 'subheading',
+			'id'    => 'import',
+			'name'  => __('Import', 'dilaz-panel'),
+			'desc'  => __('Import', 'dilaz-panel'),
+			'type'  => 'import',
+			'std'   => '',
+			'class' => 'last'
 		);
-			
-			# FIELDS - Import
-			# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-			$options[] = array(
-				'id'    => 'import',
-				'name'  => __('Import', 'dilaz-panel'),
-				'desc'  => __('Import', 'dilaz-panel'),
-				'type'  => 'import',
-				'std'   => '',
-				'class' => 'last'
-			);
-			
+		
 
 
-	return wp_parse_args($options, $options);
-
-}
+return wp_parse_args($options, $options);
