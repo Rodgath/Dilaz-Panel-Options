@@ -6,7 +6,7 @@
 ||
 || @package		Dilaz Panel
 || @subpackage	Panel
-|| @version		2.1
+|| @version		2.2
 || @since		Dilaz Panel 1.0
 || @author		WebDilaz Team, http://webdilaz.com
 || @copyright	Copyright (C) 2017, WebDilaz LTD
@@ -26,8 +26,8 @@ $parameters = array(
 	'option_name'     => 'n00b_options', # must be unique. Used to save settings.
 	'option_prefix'   => 'n00b_panel', # must be unique. Not used to save settings.
 	'use_type'        => 'theme', # 'theme' if used within a theme OR 'plugin' if used within a plugin
-	'default_options' => true, # whether to load default options
-	'custom_options'  => true, # whether to load custom options
+	'default_options' => false, # whether to load default options
+	'custom_options'  => false, # whether to load custom options
 	'page_slug'       => 'n00b_panel', # should be unique
 	'page_title'      => __('n00b Panel', 'dilaz-panel'),
 	'menu_title'      => __('n00b Panel', 'dilaz-panel'),

@@ -16,6 +16,21 @@
 
 defined('ABSPATH') || exit;
 
+# Check if DilazPanel plugin is installed/activated
+require_once(ABSPATH . 'wp-admin/includes/plugin.php');
+if (!is_plugin_active('dilaz-panel/dilaz-panel.php')) {
+	add_action('admin_notices', function() {
+		$plugins = get_plugins();
+		if (isset($plugins['dilaz-panel/dilaz-panel.php'])) {
+			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Please activate <em>Dilaz Panel</em> plugin. It is required in "<em>%s</em>".', 'dilaz-panel' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/admin.php' ) .'</strong></p></div>';
+		} else {
+			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Please install <em>Dilaz Panel</em> plugin. It is required in "<em>%s</em>".', 'dilaz-panel' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/admin.php' ) .'</strong></p></div>';
+		}
+	});
+	
+	return;
+}
+
 # Options
 $options = array();
 
