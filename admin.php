@@ -6,7 +6,7 @@
 ||
 || @package		Dilaz Panel
 || @subpackage	Panel
-|| @version		2.2
+|| @version		2.3
 || @since		Dilaz Panel 1.0
 || @author		WebDilaz Team, http://webdilaz.com
 || @copyright	Copyright (C) 2017, WebDilaz LTD
@@ -26,21 +26,23 @@ $parameters = array(
 	'option_name'     => 'n00b_options', # must be unique. Used to save settings.
 	'option_prefix'   => 'n00b_panel', # must be unique. Not used to save settings.
 	'use_type'        => 'theme', # 'theme' if used within a theme OR 'plugin' if used within a plugin
-	'default_options' => false, # whether to load default options
-	'custom_options'  => false, # whether to load custom options
-	'page_slug'       => 'n00b_panel', # should be unique
-	'page_title'      => __('n00b Panel', 'dilaz-panel'),
-	'menu_title'      => __('n00b Panel', 'dilaz-panel'),
+	'default_options' => true, # whether to load default options.
+	'custom_options'  => false, # whether to load custom options.
+	'page_slug'       => 'n00b_panel', # should be unique.
+	'page_title'      => __('n00b Panel', 'dilaz-panel'), # The text to be displayed in the title tags of the page when the menu is selected.
+	'menu_title'      => __('n00b Panel', 'dilaz-panel'), # The text to be used for the menu.
 	'options_cap'     => 'manage_options', # The capability required for this menu to be displayed to the user.
-	'menu_icon'       => '', # dashicon menu icon
-	'admin_bar_menu'  => true, # 'true' to show panel in admin bar menu
-	'import_export'   => true, # 'true' to enable import/export field
+	'menu_icon'       => '', # dashicon menu icon.
+	'menu_position'   => null, # position in menu order. Works with top-level menu only.
+	'parent_slug'     => '', # The slug name for the parent menu (or the file name of a standard WordPress admin page).
+	'admin_bar_menu'  => true, # 'true' to show panel in admin bar menu.
+	'import_export'   => true, # 'true' to enable import/export field.
 	'log_title'       => __('Changelog', 'dilaz-panel'),
-	'log_url'         => '#', # leave empty to disable
+	'log_url'         => '#', # leave empty to disable.
 	'doc_title'       => __('Documentation', 'dilaz-panel'),
-	'doc_url'         => '#', # leave empty to disable
+	'doc_url'         => '#', # leave empty to disable.
 	'support_title'   => __('Support', 'dilaz-panel'),
-	'support_url'     => '#', # leave empty to disable
+	'support_url'     => '#', # leave empty to disable.
 );
 
 

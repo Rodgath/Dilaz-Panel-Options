@@ -135,6 +135,27 @@ $options[] = array(
 			'class' => ''
 		);
 		$options[] = array(
+			'id'    => 'editor',
+			'name'  => __('WP Editor:', 'dilaz-panel'),
+			'desc'  => __('Enter text content.', 'dilaz-panel'),
+			'type'  => 'editor',
+			'args'  => array(
+				'editor' => array(
+					'wpautop'       => false,
+					'media_buttons' => false,
+					// 'textarea_rows' => 11,
+					'editor_height' => 320,
+					// 'tabindex'      => 1,
+					'editor_css'    => '',
+					'teeny'         => true,
+					// 'tinymce'       => array(),
+					'quicktags'     => false
+				)
+			),
+			'std'   => 'Sample textarea content goes here.',
+			'class' => ''
+		);
+		$options[] = array(
 			'id'    => 'text',
 			'name'  => __('Text:', 'dilaz-panel'),
 			'desc'  => __('Text field example.', 'dilaz-panel'),
