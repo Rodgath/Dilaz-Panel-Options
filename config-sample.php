@@ -14,7 +14,9 @@
 || @License		GPL-2.0+
 || @License URI	http://www.gnu.org/licenses/gpl-2.0.txt
 || 
-|| NOTE: This options panel requires Dilaz Panel plugin installed. 
+|| NOTE 2: Rename this file from "config-sample.php" to "config.php". If you
+||       don't rename it, all your config and settings will be overwritten
+||       when updating Dilaz Panel Options.
 || 
 */
 

@@ -22,7 +22,6 @@
 defined('ABSPATH') || exit;
 
 
-
 # MAIN TAB - General Settings
 # =============================================================================================
 $options[] = array(
@@ -343,6 +342,178 @@ $options[] = array(
 			'class' => ''
 		);
 
+# MAIN TAB - General Settings
+# =============================================================================================
+$options[] = array(
+	'name' => __('Repeatable Options', 'dilaz-panel'),
+	'type' => 'heading',
+	'icon' => 'fa-align-justify'
+);
+	
+	# TAB - Repeatable Options Set
+	# *****************************************************************************************
+	// $options[] = array(
+		// 'name' => __('', 'dilaz-panel'),
+		// 'type'  => 'metabox_tab'
+	// );
+		
+		# FIELDS - Alpha Tab 1
+		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+		$options[] = array(
+			'id'   => 'repeatable_one',
+			'name' => __('Repeatable (Single Field per Row):', 'dilaz-panel'),
+			'desc' => __('Single row items repeatable field. ', 'dilaz-panel'),
+			'type' => 'repeatable',
+			'args' => array(
+				'sortable' => true,
+				'removable' => true,
+				'add_more' => true,
+				'add_text' => __('Add More', 'dilaz-panel'),
+			),
+			'options' => array(
+				array(
+					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 2 - Value 2'), 
+				)
+			),
+		);
+		$options[] = array(
+			'id'   => 'repeatable_two',
+			'name' => __('Repeatable (Multiple Fields per Row):', 'dilaz-panel'),
+			'desc' => __('Multiple row items repeatable field. You can add any number item fields per row.', 'dilaz-panel'),
+			'type' => 'repeatable',
+			'args' => array(
+				'sortable' => true,
+				'removable' => true,
+				'add_more' => true,
+				'add_text' => __('Add More Custom', 'dilaz-panel'),
+			),
+			'options' => array(
+				array(
+					array('label' => 'Label One', 'value' => 'Row 1 - Value 1', 'size' => 15), 
+					array('label' => 'Label Two', 'value' => 'Row 1 - Value 2', 'size' => 15), 
+					array('label' => 'Label Three', 'value' => 'Row 1 - Value 3', 'size' => 15), 
+					array('label' => 'Label Four', 'value' => 'Row 1 - Value 4', 'size' => 15), 
+				),
+				array(
+					array('label' => 'Label One', 'value' => 'Row 2 - Value 1', 'size' => 15), 
+					array('label' => 'Label Two', 'value' => 'Row 2 - Value 2', 'size' => 15), 
+					array('label' => 'Label Three', 'value' => 'Row 2 - Value 3', 'size' => 15), 
+					array('label' => 'Label Four', 'value' => 'Row 2 - Value 4', 'size' => 15), 
+				)
+			),
+		);
+		$options[] = array(
+			'id'   => 'repeatable_three',
+			'name' => __('Repeatable (Add More Field Disabled):', 'dilaz-panel'),
+			'desc' => __('Add more button is disabled.', 'dilaz-panel'),
+			'type' => 'repeatable',
+			'args' => array(
+				'sortable' => true,
+				'removable' => true,
+				'add_more' => false,
+			),
+			'options' => array(
+				array(
+					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 3 - Value 1'), 
+				)
+			),
+		);
+		$options[] = array(
+			'id'   => 'repeatable_four',
+			'name' => __('Repeatable (Sorting Disabled):', 'dilaz-panel'),
+			'desc' => __('Field sorting is disabled.', 'dilaz-panel'),
+			'type' => 'repeatable',
+			'args' => array(
+				'sortable' => false,
+				'removable' => true,
+				'add_more' => true,
+			),
+			'options' => array(
+				array(
+					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 3 - Value 1'), 
+				)
+			),
+		);
+		$options[] = array(
+			'id'   => 'repeatable_five',
+			'name' => __('Repeatable (Sorting Disabled for First 2 Fields):', 'dilaz-panel'),
+			'desc' => __('Field sorting is disabled for the first 2 items.', 'dilaz-panel'),
+			'type' => 'repeatable',
+			'args' => array(
+				'sortable' => true,
+				'not_sortable' => 2,
+				'add_more' => true,
+			),
+			'options' => array(
+				array(
+					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 3 - Value 1'), 
+				)
+			),
+		);
+		$options[] = array(
+			'id'   => 'repeatable_six',
+			'name' => __('Repeatable (Removal Disabled):', 'dilaz-panel'),
+			'desc' => __('Field removal is disabled.', 'dilaz-panel'),
+			'type' => 'repeatable',
+			'args' => array(
+				'removable' => false,
+				'add_more' => true,
+			),
+			'options' => array(
+				array(
+					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 3 - Value 1'), 
+				)
+			),
+		);
+		$options[] = array(
+			'id'   => 'repeatable_seven',
+			'name' => __('Repeatable (Removal Disabled for the 1st and 2nd Fields):', 'dilaz-panel'),
+			'desc' => __('Field removal is disabled for the 1st and 2nd items.', 'dilaz-panel'),
+			'type' => 'repeatable',
+			'args' => array(
+				'not_removable' => 2,
+				'add_more' => true,
+			),
+			'options' => array(
+				array(
+					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+				),
+				array(
+					array('label' => '', 'value' => 'Row 3 - Value 1'), 
+				)
+			),
+		);
+
 # MAIN TAB - Typography Options
 # =============================================================================================
 $options[] = array(
@@ -366,14 +537,24 @@ $options[] = array(
 			'desc' => __('Typography style with many option properties.', 'dilaz-panel'),
 			'type' => 'font',
 			'options' => array( 
-				'family' => false, 
+				'family' => true,
+				'subset' => true,
+				'weight' => true,
+				'size'   => true, 
+				'height' => true, 
+				'style'  => true, 
+				'case'   => true, 
+				'color'  => true, 
+			),
+			'std' => array(
+				'family' => 'Trebuchet', 
 				'subset' => false, 
-				'weight' => false, 
-				'size'   => false, 
-				'height' => false, 
-				'style'  => false, 
-				'case'   => false, 
-				'color'  => false
+				'weight' => false,
+				'size'   => '18', 
+				'height' => false,
+				'style'  => false,
+				'case'   => false,
+				'color'  => false,
 			),
 			'class' => ''
 		);
@@ -383,14 +564,24 @@ $options[] = array(
 			'desc' => __('Typography style with few option properties.', 'dilaz-panel'),
 			'type' => 'font',
 			'options' => array( 
-				'family' => false, 
-				// 'subset' => false, 
-				// 'weight' => false, 
-				'size'   => false, 
-				'height' => false, 
-				'style'  => false, 
-				'case'   => false, 
-				'color'  => false
+				'family' => true, 
+				'subset' => false, 
+				'weight' => false, 
+				'size'   => true, 
+				'height' => true, 
+				'style'  => true, 
+				'case'   => true, 
+				'color'  => true, 
+			),
+			'std' => array(
+				'family' => 'Trebuchet', 
+				'subset' => false,
+				'weight' => false,
+				'size'   => false,
+				'height' => false,
+				'style'  => 'italic',
+				'case'   => false,
+				'color'  => false,
 			),
 			'class' => ''
 		);

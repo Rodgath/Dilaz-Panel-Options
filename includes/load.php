@@ -22,13 +22,18 @@ if (!is_plugin_active('dilaz-panel/dilaz-panel.php')) {
 	add_action('admin_notices', function() {
 		$plugins = get_plugins();
 		if (isset($plugins['dilaz-panel/dilaz-panel.php'])) {
-			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Please activate <em>Dilaz Panel</em> plugin. It is required in "<em>%s</em>".', 'dilaz-panel' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/admin.php' ) .'</strong></p></div>';
+			echo '<div id="message" class="notice notice-warning"><p><strong>'. sprintf(__('Please activate <em>Dilaz Panel</em> plugin. It is required in "<em>%s</em>".', 'dilaz-panel'), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/admin.php') .'</strong></p></div>';
 		} else {
-			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Please install <em>Dilaz Panel</em> plugin. It is required in "<em>%s</em>".', 'dilaz-panel' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/admin.php' ) .'</strong></p></div>';
+			echo '<div id="message" class="notice notice-warning"><p><strong>'. sprintf(__('Please install <em>Dilaz Panel</em> plugin. It is required in "<em>%s</em>".', 'dilaz-panel'), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/admin.php') .'</strong></p></div>';
 		}
 	});
 	
 	return;
+}
+
+# Lets ensure the DilazPanel class is loaded
+if (!class_exists('DilazPanel') && file_exists(ABSPATH .'wp-content/plugins/dilaz-panel/dilaz-panel.php')) {
+	require_once ABSPATH .'wp-content/plugins/dilaz-panel/dilaz-panel.php';
 }
 
 # Options

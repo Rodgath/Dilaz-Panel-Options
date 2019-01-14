@@ -6,7 +6,7 @@
 ||
 || @package		Dilaz Panel
 || @subpackage	Panel
-|| @version		2.4.1
+|| @version		2.4.2
 || @since		Dilaz Panel 1.0
 || @author		WebDilaz Team, http://webdilaz.com
 || @copyright	Copyright (C) 2017, WebDilaz LTD
@@ -21,7 +21,7 @@
 defined('ABSPATH') || exit;
 
 # Load config
-require_once dirname(__FILE__) .'/config.php';
+file_exists(dirname(__FILE__) .'/config.php') ? require_once dirname(__FILE__) .'/config.php' : require_once dirname(__FILE__) .'/config-sample.php';
 
 # Load metabox options
 require_once dirname(__FILE__) .'/includes/load.php';
