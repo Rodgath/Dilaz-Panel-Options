@@ -25,7 +25,7 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 	if (strpos(dirname(__FILE__), '\plugins\\') !== false) {
 		
 		add_action('admin_notices', function() {
-			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Wrong use-type for admin options. Please set "<em>use_type</em>" parameter to "<em>plugin</em>" in "<em>%s</em>".', 'dilaz-panel' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/admin.php' ) .'</strong></p></div>';
+			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Wrong use-type for admin options. Please set "<em>use_type</em>" parameter to "<em>plugin</em>" in "<em>%s</em>".', 'dilaz-panel' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/config.php' ) .'</strong></p></div>';
 		});
 		
 		$parameters['use_type_error'] = true;
@@ -61,7 +61,7 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 	if (strpos(dirname(__FILE__), '\themes\\') !== false) {
 		
 		add_action('admin_notices', function() {
-			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Wrong use-type for admin options. Please set "<em>use_type</em>" parameter to "<em>theme</em>" in "<em>%s</em>".', 'dilaz-panel' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/admin.php' ) .'</strong></p></div>';
+			echo '<div id="message" class="error"><p><strong>'. sprintf( __( 'Wrong use-type for admin options. Please set "<em>use_type</em>" parameter to "<em>theme</em>" in "<em>%s</em>".', 'dilaz-panel' ), 'wp-content'. wp_normalize_path(explode('wp-content', dirname(__DIR__))[1]) .'/config.php' ) .'</strong></p></div>';
 		});
 		
 		# set use type error
@@ -101,7 +101,7 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 		$use_type_parameters = array(
 			'item_name'    => $plugin_name,
 			'item_version' => $plugin_version,
-			'dir_url'      => trailingslashit(wp_normalize_path($split_3[1].$plugin_folder.$split_3[0])),
+			'dir_url'      => trailingslashit($split_3[1].$plugin_folder.wp_normalize_path($split_3[0])),
 		);
 	}
 }
