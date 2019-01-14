@@ -1,2 +1,2 @@
 # Dilaz Panel Options Sample
-A useful sample/example on how to use and implement Dilaz-Panel-Plugin. 
+This helps you to integrate [Dilaz Panel Plugin](https://github.com/Rodgath/Dilaz-Panel-Plugin) into your WordPress theme/plugin development.
