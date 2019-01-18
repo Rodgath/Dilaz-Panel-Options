@@ -18,7 +18,7 @@ This helps you to integrate [Dilaz Panel Plugin](https://github.com/Rodgath/Dila
 /**
  * Admin Panel Options
  */
-require_once 'Dilaz-Paneles-Options/admin.php';
+require_once 'Dilaz-Panel-Options/admin.php';
 ```
 5. Open ```Dilaz-Panel-Options``` folder and rename ```config-sample.php``` to ```config.php```.
 6. Open ```Dilaz-Panel-Options/config.php``` and edit the parameters as you want. Simple guidelines are provided beside each parameter setting.
