@@ -22,7 +22,7 @@ defined('ABSPATH') || exit;
 $options[] = array(
 	'name' => __('Export / Import', 'dilaz-panel'),
 	'type' => 'heading',
-	'icon' => 'fa-cloud'
+	'icon' => 'mdi-download'
 );
 	
 	# SUB TAB - Export

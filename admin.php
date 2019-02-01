@@ -6,7 +6,7 @@
 ||
 || @package		Dilaz Panel
 || @subpackage	Panel
-|| @version		2.4.3
+|| @version		2.4.4
 || @since		Dilaz Panel 1.0
 || @author		WebDilaz Team, http://webdilaz.com
 || @copyright	Copyright (C) 2017, WebDilaz LTD

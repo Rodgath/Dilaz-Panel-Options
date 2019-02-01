@@ -27,7 +27,7 @@ defined('ABSPATH') || exit;
 $options[] = array(
 	'name' => __('General Options', 'dilaz-panel'),
 	'type' => 'heading',
-	'icon' => 'fa-cog'
+	'icon' => 'mdi-settings'
 );
 	
 	# SUB TAB - Simple Options Set
@@ -195,7 +195,7 @@ $options[] = array(
 $options[] = array(
 	'name' => __('Media Options', 'dilaz-panel'),
 	'type' => 'heading',
-	'icon' => 'fa-tv'
+	'icon' => 'mdi-monitor'
 );
 	
 	# SUB TAB - Image
@@ -296,7 +296,7 @@ $options[] = array(
 $options[] = array(
 	'name' => __('Color Options', 'dilaz-panel'),
 	'type' => 'heading',
-	'icon' => 'fa-paint-brush'
+	'icon' => 'mdi-format-color-fill'
 );
 	
 	# SUB TAB - Color
@@ -347,7 +347,7 @@ $options[] = array(
 $options[] = array(
 	'name' => __('Repeatable Options', 'dilaz-panel'),
 	'type' => 'heading',
-	'icon' => 'fa-align-justify'
+	'icon' => 'mdi-view-list'
 );
 	
 	# TAB - Repeatable Options Set
@@ -519,7 +519,7 @@ $options[] = array(
 $options[] = array(
 	'name' => __('Typography Options', 'dilaz-panel'),
 	'type' => 'heading',
-	'icon' => 'fa-font'
+	'icon' => 'mdi-format-font'
 );
 	
 	# SUB TAB - Typography
@@ -566,7 +566,7 @@ $options[] = array(
 			'options' => array( 
 				'family' => true, 
 				'subset' => false, 
-				'weight' => false, 
+				'weight' => true, 
 				'size'   => true, 
 				'height' => true, 
 				'style'  => true, 
@@ -591,7 +591,7 @@ $options[] = array(
 $options[] = array(
 	'name' => __('Choice Options', 'dilaz-panel'),
 	'type' => 'heading',
-	'icon' => 'fa-sliders'
+	'icon' => 'mdi-tune'
 );
 	
 	# SUB TAB - Choice
@@ -838,7 +838,7 @@ $options[] = array(
 $options[] = array(
 	'name' => __('Conditionals', 'dilaz-panel'),
 	'type' => 'heading',
-	'icon' => 'fa-toggle-on'
+	'icon' => 'mdi-toggle-switch'
 );
 	
 	# SUB TAB - Conditionals
