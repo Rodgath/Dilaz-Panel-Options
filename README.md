@@ -36,27 +36,27 @@ __NOTE:__
 
 ## *config.php* parameters
 
-| Parameter      | Type          | Since  | Details |
-| :------------- |:------------- | :----- | :-----  |
-| `option_name`   | *string* | Dilaz Panel 2.4.1 | Used to save settings. Must be unique. |
-| `option_prefix` | *string* | Dilaz Panel 2.4.1 | Not used to save settings. Must be unique. |
-| `use_type` | *string* | Dilaz Panel 2.4.1 | Where the panel is used. Enter `theme` if used within a theme OR `plugin` if used within a plugin |
-| `default_options` | *boolean* | Dilaz Panel 2.4.1 | Whether to load default options. |
-| `custom_options` | *boolean* | Dilaz Panel 2.4.1 | Whether to load custom options. |
-| `page_slug` | *string* | Dilaz Panel 2.4.1 | Must be unique. |
-| `page_title` | *string* | Dilaz Panel 2.4.1 | The text to be displayed in the title tags of the page when the menu is selected. |
-| `menu_title` | *string* | Dilaz Panel 2.4.1 | The text to be used for the menu. |
-| `menu_icon` | *string* | Dilaz Panel 2.4.1 | Dashicon menu icon. |
-| `menu_position` | *int* | Dilaz Panel 2.4.1 | Position in menu order. Works with top-level menu only. |
-| `parent_slug` | *string* | Dilaz Panel 2.4.1 | The slug name for the parent menu (or the file name of a standard WordPress admin page). |
-| `admin_bar_menu` | *boolean* | Dilaz Panel 2.4.1 | 'true' to show panel in admin bar menu. |
-| `import_export` | *boolean* | Dilaz Panel 2.4.1 | 'true' to enable import/export field. |
-| `log_title` | *string* | Dilaz Panel 2.4.1 | Changlelog title. |
-| `log_url` | *string* | Dilaz Panel 2.4.1 | Changlelog url. Leave empty to disable. |
-| `doc_title` | *string* | Dilaz Panel 2.4.1 | Documentation title. |
-| `doc_url` | *string* | Dilaz Panel 2.4.1 | Documentation url. Leave empty to disable. |
-| `support_title` | *string* | Dilaz Panel 2.4.1 | Support title. |
-| `support_url` | *string* | Dilaz Panel 2.4.1 | Support url. Leave empty to disable. |
+| Parameter     | Type          | Since (Dilaz Panel Version)  | Details |
+| :------------- |:----------| :-------------| :----- |
+| `option_name`   | *string* | 2.4.1 | Used to save settings. Must be unique. |
+| `option_prefix` | *string* | 2.4.1 | Not used to save settings. Must be unique. |
+| `use_type` | *string* | 2.4.1 | Where the panel is used. Enter `theme` if used within a theme OR `plugin` if used within a plugin |
+| `default_options` | *boolean* | 2.4.1 | Whether to load default options. |
+| `custom_options` | *boolean* | 2.4.1 | Whether to load custom options. |
+| `page_slug` | *string* | 2.4.1 | Must be unique. |
+| `page_title` | *string* | 2.4.1 | The text to be displayed in the title tags of the page when the menu is selected. |
+| `menu_title` | *string* | 2.4.1 | The text to be used for the menu. |
+| `menu_icon` | *string* | 2.4.1 | Dashicon menu icon. |
+| `menu_position` | *int* | 2.4.1 | Position in menu order. Works with top-level menu only. |
+| `parent_slug` | *string* | 2.4.1 | The slug name for the parent menu (or the file name of a standard WordPress admin page). |
+| `admin_bar_menu` | *boolean* | 2.4.1 | 'true' to show panel in admin bar menu. |
+| `import_export` | *boolean* | 2.4.1 | 'true' to enable import/export field. |
+| `log_title` | *string* | 2.4.1 | Changlelog title. |
+| `log_url` | *string* | 2.4.1 | Changlelog url. Leave empty to disable. |
+| `doc_title` | *string* | 2.4.1 | Documentation title. |
+| `doc_url` | *string* | 2.4.1 | Documentation url. Leave empty to disable. |
+| `support_title` | *string* | 2.4.1 | Support title. |
+| `support_url` | *string* | 2.4.1 | Support url. Leave empty to disable. |
 
 *** 
 
