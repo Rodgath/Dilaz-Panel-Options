@@ -36,8 +36,8 @@ __NOTE:__
 
 ## *config.php* parameters
 
-| Parameter     | Type          | Since  | Details |
-| :------------- |:-------------| :-----:| :----- |
+| Parameter      | Type          | Since  | Details |
+| :------------- |:------------- | :----- | :-----  |
 | `option_name`   | *string* | Dilaz Panel 2.4.1 | Used to save settings. Must be unique. |
 | `option_prefix` | *string* | Dilaz Panel 2.4.1 | Not used to save settings. Must be unique. |
 | `use_type` | *string* | Dilaz Panel 2.4.1 | Where the panel is used. Enter `theme` if used within a theme OR `plugin` if used within a plugin |
