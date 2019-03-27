@@ -4,17 +4,17 @@
 || Admin Panel Config
 || --------------------------------------------------------------------------------------------
 ||
-|| @package		Dilaz Panel
-|| @subpackage	Config
-|| @since		Dilaz Panel 2.4.1
-|| @author		WebDilaz Team, http://webdilaz.com
-|| @copyright	Copyright (C) 2017, WebDilaz LTD
-|| @link		http://webdilaz.com/panel
-|| @License		GPL-2.0+
-|| @License URI	http://www.gnu.org/licenses/gpl-2.0.txt
+|| @package     Dilaz Panel Options
+|| @subpackage  Config
+|| @since       Dilaz Panel 2.4.1
+|| @author      WebDilaz Team, http://webdilaz.com
+|| @copyright   Copyright (C) 2017, WebDilaz LTD
+|| @link        http://webdilaz.com/panel
+|| @License     GPL-2.0+
+|| @License URI http://www.gnu.org/licenses/gpl-2.0.txt
 || 
 || NOTE: Rename this file from "config-sample.php" to "config.php". If you
-||       don't rename it, all your config and settings will be overwritten
+||       don't rename it, all your config parameters will be overwritten
 ||       when updating Dilaz Panel Options.
 || 
 */
@@ -27,7 +27,7 @@ $parameters = array(
 	'option_prefix'   => 'dilaz_panel', # must be unique. Not used to save settings.
 	'use_type'        => 'theme', # 'theme' if used within a theme OR 'plugin' if used within a plugin
 	'default_options' => true, # whether to load default options.
-	'custom_options'  => false, # whether to load custom options.
+	'custom_options'  => true, # whether to load custom options.
 	'page_slug'       => 'dilaz_panel', # should be unique.
 	'page_title'      => __('Dilaz Panel', 'dilaz-panel'), # The text to be displayed in the title tags of the page when the menu is selected.
 	'menu_title'      => __('Dilaz Panel', 'dilaz-panel'), # The text to be used for the menu.

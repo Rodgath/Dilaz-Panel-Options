@@ -4,13 +4,13 @@
 || Admin Panel Use Type
 || --------------------------------------------------------------------------------------------
 ||
-|| @package		Dilaz Panel
-|| @subpackage	Use Type
-|| @since		Dilaz Panel 2.0
-|| @author		WebDilaz Team, http://webdilaz.com
-|| @copyright	Copyright (C) 2017, WebDilaz LTD
-|| @link		http://webdilaz.com/panel
-|| @license		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+|| @package    Dilaz Panel
+|| @subpackage Use Type
+|| @since      Dilaz Panel 2.0
+|| @author     WebDilaz Team, http://webdilaz.com
+|| @copyright  Copyright (C) 2017, WebDilaz LTD
+|| @link       http://webdilaz.com/panel
+|| @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 || 
 */
 

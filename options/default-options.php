@@ -25,6 +25,7 @@ defined('ABSPATH') || exit;
 # MAIN TAB - General Settings
 # =============================================================================================
 $options[] = array(
+	'id'   => 'general-options',
 	'name' => __('General Options', 'dilaz-panel'),
 	'type' => 'heading',
 	'icon' => 'mdi-settings'
@@ -33,12 +34,19 @@ $options[] = array(
 	# SUB TAB - Simple Options Set
 	# *****************************************************************************************
 	// $options[] = array(
+		// 'id'   => 'general',
 		// 'name' => __('General', 'dilaz-panel'),
 		// 'type' => 'subheading',
 	// );
 		
 		# FIELDS - Alpha Tab 1
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+		$options[] = array(
+			'id'   => 'info',
+			'name' => __('Info Box Title', 'dilaz-panel'),
+			'desc' => __('Sample info description goes here.', 'dilaz-panel'),
+			'type' => 'info',
+		);
 		$options[] = array(
 			'id'   => 'range',
 			'name' => __('Range:', 'dilaz-panel'),
@@ -61,6 +69,12 @@ $options[] = array(
 			'args'  => array('min' => 8, 'max' => 100, 'step' => 2, 'suffix' => '%'),
 			'std'   => '40',
 			'class' => ''
+		);
+		$options[] = array(
+			'id'   => 'info',
+			'name' => __('Info Box Title', 'dilaz-panel'),
+			'desc' => __('Sample info description goes here.', 'dilaz-panel'),
+			'type' => 'info',
 		);
 		$options[] = array(
 			'id'   => 'switchenable',
@@ -193,6 +207,7 @@ $options[] = array(
 # MAIN TAB - Media Options
 # =============================================================================================
 $options[] = array(
+	'id'   => 'media-options',
 	'name' => __('Media Options', 'dilaz-panel'),
 	'type' => 'heading',
 	'icon' => 'mdi-monitor'
@@ -201,6 +216,7 @@ $options[] = array(
 	# SUB TAB - Image
 	# *****************************************************************************************
 	$options[] = array(
+		'id'   => 'image',
 		'name' => __('Image', 'dilaz-panel'),
 		'type' => 'subheading',
 	);
@@ -232,6 +248,7 @@ $options[] = array(
 	# SUB TAB - Audio
 	# *****************************************************************************************
 	$options[] = array(
+		'id'   => 'audio',
 		'name' => __('Audio', 'dilaz-panel'),
 		'type' => 'subheading',
 	);
@@ -263,6 +280,7 @@ $options[] = array(
 	# SUB TAB - Video
 	# *****************************************************************************************
 	$options[] = array(
+		'id'   => 'video',
 		'name' => __('Video', 'dilaz-panel'),
 		'type' => 'subheading',
 	);
@@ -294,6 +312,7 @@ $options[] = array(
 # MAIN TAB - Color Options
 # =============================================================================================
 $options[] = array(
+	'id'   => 'color-options',
 	'name' => __('Color Options', 'dilaz-panel'),
 	'type' => 'heading',
 	'icon' => 'mdi-format-color-fill'
@@ -302,6 +321,7 @@ $options[] = array(
 	# SUB TAB - Color
 	# *****************************************************************************************
 	// $options[] = array(
+		// 'id'   => 'color',
 		// 'name' => __('Color', 'dilaz-panel'),
 		// 'type' => 'subheading',
 	// );
@@ -345,6 +365,7 @@ $options[] = array(
 # MAIN TAB - General Settings
 # =============================================================================================
 $options[] = array(
+	'id'   => 'repeatable-options',
 	'name' => __('Repeatable Options', 'dilaz-panel'),
 	'type' => 'heading',
 	'icon' => 'mdi-view-list'
@@ -353,8 +374,9 @@ $options[] = array(
 	# TAB - Repeatable Options Set
 	# *****************************************************************************************
 	// $options[] = array(
+		// 'id'   => '',
 		// 'name' => __('', 'dilaz-panel'),
-		// 'type'  => 'metabox_tab'
+		// 'type'  => 'subheading'
 	// );
 		
 		# FIELDS - Alpha Tab 1
@@ -517,6 +539,7 @@ $options[] = array(
 # MAIN TAB - Typography Options
 # =============================================================================================
 $options[] = array(
+	'id'   => 'typography-options',
 	'name' => __('Typography Options', 'dilaz-panel'),
 	'type' => 'heading',
 	'icon' => 'mdi-format-font'
@@ -525,6 +548,7 @@ $options[] = array(
 	# SUB TAB - Typography
 	# *****************************************************************************************
 	// $options[] = array(
+		// 'id'   => 'typography',
 		// 'name' => __('Typography', 'dilaz-panel'),
 		// 'type' => 'subheading',
 	// );
@@ -589,6 +613,7 @@ $options[] = array(
 # MAIN TAB - Choice Options
 # =============================================================================================
 $options[] = array(
+	'id'   => 'choice-options',
 	'name' => __('Choice Options', 'dilaz-panel'),
 	'type' => 'heading',
 	'icon' => 'mdi-tune'
@@ -597,6 +622,7 @@ $options[] = array(
 	# SUB TAB - Choice
 	# *****************************************************************************************
 	// $options[] = array(
+		// 'id'   => 'choice',
 		// 'name' => __('Choice', 'dilaz-panel'),
 		// 'type' => 'subheading',
 	// );
@@ -836,6 +862,7 @@ $options[] = array(
 # TAB - Conditionals
 # =============================================================================================
 $options[] = array(
+	'id'   => 'conditionals',
 	'name' => __('Conditionals', 'dilaz-panel'),
 	'type' => 'heading',
 	'icon' => 'mdi-toggle-switch'
@@ -844,6 +871,7 @@ $options[] = array(
 	# SUB TAB - Conditionals
 	# *****************************************************************************************
 	// $options[] = array(
+		// 'id'   => 'conditionals',
 		// 'name' => __('Conditionals', 'dilaz-panel'),
 		// 'type' => 'subheading',
 	// );
