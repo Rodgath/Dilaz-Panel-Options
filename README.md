@@ -38,26 +38,28 @@ __NOTE:__
 
 | Parameter     | Type    | Default | Since (Dilaz Panel)  | Details |
 | :------------- |:----------|:----------| :-------------| :----- |
-| `option_name`   | *string* | dilaz_options | v2.4.1 | Used to save settings. Must be unique. |
-| `option_prefix` | *string* | dilaz_panel | v2.4.1 | Not used to save settings. Must be unique. |
-| `use_type` | *string* | theme | v2.4.1 | Where the panel is used. Enter `theme` if used within a theme OR `plugin` if used within a plugin |
-| `default_options` | *boolean* | true | v2.4.1 | Whether to load default options. |
-| `custom_options` | *boolean* | true | v2.4.1 | Whether to load custom options. |
-| `page_slug` | *string* | dilaz_panel | v2.4.1 | Must be unique. |
-| `page_title` | *string* | Dilaz Panel | v2.4.1 | The text to be displayed in the title tags of the page when the menu is selected. |
-| `menu_title` | *string* | Dilaz Panel | v2.4.1 | The text to be used for the menu. |
-| `options_cap` | *string* | manage_options | v2.4.1 |The capability required for this menu to be displayed to the user. |
-| `menu_icon` | *string* | null | v2.4.1 | Dashicon menu icon. |
-| `menu_position` | *int* | null | v2.4.1 | Position in menu order. Works with top-level menu only. |
-| `parent_slug` | *string* | null | v2.4.1 | The slug name for the parent menu (or the file name of a standard WordPress admin page). |
-| `admin_bar_menu` | *boolean* | true | v2.4.1 | 'true' to show panel in admin bar menu. |
-| `import_export` | *boolean* | true | v2.4.1 | 'true' to enable import/export field. |
-| `log_title` | *string* | Changelog | v2.4.1 | Changlelog title. |
-| `log_url` | *string* | # | v2.4.1 | Changlelog url. Leave empty to disable. |
-| `doc_title` | *string* | Documentation | v2.4.1 | Documentation title. |
-| `doc_url` | *string* | # | v2.4.1 | Documentation url. Leave empty to disable. |
-| `support_title` | *string* | Support | v2.4.1 | Support title. |
-| `support_url` | *string* | # | v2.4.1 | Support url. Leave empty to disable. |
+| `option_name`   | *string* | dilaz_options | v2.3 | Used to save settings. Must be unique. |
+| `option_prefix` | *string* | dilaz_panel | v2.0 | Not used to save settings. Must be unique. |
+| `use_type` | *string* | theme | v2.0 | Where the panel is used. Enter `theme` if used within a theme OR `plugin` if used within a plugin |
+| `default_options` | *boolean* | true | v2.0 | Whether to load default options. |
+| `custom_options` | *boolean* | true | v2.0 | Whether to load custom options. |
+| `page_slug` | *string* | dilaz_panel | v2.0 | Must be unique. |
+| `page_title` | *string* | Dilaz Panel | v2.0 | The text to be displayed in the title tags of the page when the menu is selected. |
+| `menu_title` | *string* | Dilaz Panel | v2.0 | The text to be used for the menu. |
+| `options_cap` | *string* | manage_options | Deprecated | The capability required for this menu to be displayed to the user. |
+| `options_view_cap` | *array* | array('manage_options') | v2.7.8 | The capabilities required for this menu to be displayed to the user. |
+| `options_save_cap` | *array* | array('manage_options') | v2.7.8 | The capabilities required for the user to save the options for this panel. |
+| `menu_icon` | *string* | null | v2.0 | Dashicon menu icon. |
+| `menu_position` | *int* | null | v2.5 | Position in menu order. Works with top-level menu only. |
+| `parent_slug` | *string* | null | v2.5 | The slug name for the parent menu (or the file name of a standard WordPress admin page). |
+| `admin_bar_menu` | *boolean* | true | v2.0 | 'true' to show panel in admin bar menu. |
+| `import_export` | *boolean* | true | v2.0 | 'true' to enable import/export field. |
+| `log_title` | *string* | Changelog | v2.0 | Changlelog title. |
+| `log_url` | *string* | # | v2.0 | Changlelog url. Leave empty to disable. |
+| `doc_title` | *string* | Documentation | v2.0 | Documentation title. |
+| `doc_url` | *string* | # | v2.0 | Documentation url. Leave empty to disable. |
+| `support_title` | *string* | Support | v2.0 | Support title. |
+| `support_url` | *string* | # | v2.0 | Support url. Leave empty to disable. |
 
 *** 
 
