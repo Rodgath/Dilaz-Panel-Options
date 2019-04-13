@@ -48,7 +48,7 @@ __NOTE:__
 | `menu_title` | *string* | Dilaz Panel | v2.0 | The text to be used for the menu. |
 | `options_cap` | *string* | manage_options | Deprecated | The capability required for this menu to be displayed to the user. |
 | `options_view_cap` | *array* | array('manage_options') | v2.7.8 | The capabilities required for this menu to be displayed to the user. |
-| `options_save_cap` | *array* | array('manage_options') | v2.7.8 | The capabilities required for the user to save the options for this panel. |
+| `options_save_cap` | *array* | array('manage_options') | v2.7.8 | The capabilities required for the user to save the options for the panel. |
 | `menu_icon` | *string* | null | v2.0 | Dashicon menu icon. |
 | `menu_position` | *int* | null | v2.5 | Position in menu order. Works with top-level menu only. |
 | `parent_slug` | *string* | null | v2.5 | The slug name for the parent menu (or the file name of a standard WordPress admin page). |
