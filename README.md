@@ -59,7 +59,7 @@ __NOTE:__
 | `doc_url` | *string* | # | v2.0 | Documentation url. Leave empty to disable. |
 | `support_title` | *string* | Support | v2.0 | Support title. |
 | `support_url` | *string* | # | v2.0 | Support url. Leave empty to disable. |
-| ~~`options_cap`~~ | *string* | manage_options | v2.0 | __Deprecated__ since 2.7.8. |
+| ~~`options_cap`~~ | *string* | manage_options | v2.0 | __Deprecated__ since v2.7.8. |
 
 *** 
 
