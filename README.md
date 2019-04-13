@@ -46,7 +46,6 @@ __NOTE:__
 | `page_slug` | *string* | dilaz_panel | v2.0 | Must be unique. |
 | `page_title` | *string* | Dilaz Panel | v2.0 | The text to be displayed in the title tags of the page when the menu is selected. |
 | `menu_title` | *string* | Dilaz Panel | v2.0 | The text to be used for the menu. |
-| ~~`options_cap`~~ | *string* | manage_options | v2.0 | __Deprecated__ since 2.7.8. |
 | `options_view_cap` | *array* | array('manage_options') | v2.7.8 | The capabilities required for this menu to be displayed to the user. |
 | `options_save_cap` | *array* | array('manage_options') | v2.7.8 | The capabilities required for the user to save the options for the panel. |
 | `menu_icon` | *string* | null | v2.0 | Dashicon menu icon. |
@@ -60,6 +59,7 @@ __NOTE:__
 | `doc_url` | *string* | # | v2.0 | Documentation url. Leave empty to disable. |
 | `support_title` | *string* | Support | v2.0 | Support title. |
 | `support_url` | *string* | # | v2.0 | Support url. Leave empty to disable. |
+| ~~`options_cap`~~ | *string* | manage_options | v2.0 | __Deprecated__ since 2.7.8. |
 
 *** 
 
