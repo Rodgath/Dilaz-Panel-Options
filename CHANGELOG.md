@@ -47,7 +47,7 @@
 ###### v2.1
 ```
 = ADDED - includes/load.php file
-= IMPROVED - admin.php file minimal by moving most of the code into includes/load.php
+= IMPROVED - made admin.php file minimal by moving most of the code into includes/load.php
 = FIXED - 'user-type' error notifications
 ```
 ###### v2.0.1
