@@ -1,6 +1,10 @@
 # CHANGELOG
 
 ## Version 2
+###### v2.4.3
+```
+= FIXED - Empty plugin data returned when there's multiple PHP files in the plugin root directory
+```
 ###### v2.4.2
 ```
 = FIXED - Check if 'DilazPanel' class has been loaded in includes/load.php
