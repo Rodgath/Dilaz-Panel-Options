@@ -49,8 +49,8 @@ __NOTE:__
 | `options_view_cap` | *array* | array('manage_options') | v2.7.8 | The capabilities required for this menu to be displayed to the user. |
 | `options_save_cap` | *array* | array('manage_options') | v2.7.8 | The capabilities required for the user to save the options for the panel. |
 | `menu_icon` | *string* | null | v2.0 | Dashicon menu icon. |
-| `menu_position` | *int* | null | v2.5 | Position in menu order. Works with top-level menu only. |
-| `parent_slug` | *string* | null | v2.5 | The slug name for the parent menu (or the file name of a standard WordPress admin page). |
+| `menu_position` | *int* | null | v2.3 | Position in menu order. Works with top-level menu only. |
+| `parent_slug` | *string* | null | v2.3 | The slug name for the parent menu (or the file name of a standard WordPress admin page). |
 | `admin_bar_menu` | *boolean* | true | v2.0 | 'true' to show panel in admin bar menu. |
 | `import_export` | *boolean* | true | v2.0 | 'true' to enable import/export field. |
 | `log_title` | *string* | Changelog | v2.0 | Changlelog title. |
