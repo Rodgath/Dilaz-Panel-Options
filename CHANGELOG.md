@@ -1,7 +1,10 @@
 # CHANGELOG
 
 ## Version 2
-
+###### v2.2
+```
+= ADDED - 'DilazPanel' plugin requirement error notifications
+```
 ###### v2.1
 ```
 = ADDED - includes/load.php file
