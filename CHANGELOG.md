@@ -1,6 +1,13 @@
 # CHANGELOG
 
 ## Version 2
+
+###### v2.4.5
+```
+= IMPROVED - Import/Export field is now loaded via 'panel_option_filter_$option_name' hook
+= ADDED - 'id' fields to 'heading' and 'subheading' field types
+= ADDED - custom options example
+```
 ###### v2.4.4
 ```
 = REMOVED - Font Awesome webfont icons for tab icons
