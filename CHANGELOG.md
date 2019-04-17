@@ -2,6 +2,12 @@
 
 ## Version 2
 
+###### v2.4.6
+```
+= REMOVED 'options_cap' from config parameters
+= ADDED 'options_view_cap' to config parameters
+= ADDED 'options_save_cap' to config parameters
+```
 ###### v2.4.5
 ```
 = IMPROVED - Import/Export field is now loaded via 'panel_option_filter_$option_name' hook
