@@ -2,6 +2,12 @@
 
 ## Version 2
 
+###### v2.1
+```
+= ADDED - includes/load.php file
+= CREATED - admin.php file minimal by moving most of the code into includes/load.php
+= FIXED - 'user-type' error notifications
+```
 ###### v2.0.1
 ```
 = MOVED - 'option_name' into parameters
