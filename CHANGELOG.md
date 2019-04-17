@@ -1,6 +1,10 @@
 # CHANGELOG
 
 ## Version 2
+###### v2.4.1
+```
+= ADDED - /config-sample.php - Helps in preserving config parameters during updates
+```
 ###### v2.4
 ```
 = FIXED - includes/use-type.php bugs
