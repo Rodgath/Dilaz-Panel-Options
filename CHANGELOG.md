@@ -1,6 +1,11 @@
 # CHANGELOG
 
 ## Version 2
+###### v2.3
+```
+= ADDED - 'menu_position' admin parameter
+= ADDED - 'parent_slug' admin parameter
+```
 ###### v2.2
 ```
 = ADDED - 'DilazPanel' plugin requirement error notifications
@@ -8,7 +13,7 @@
 ###### v2.1
 ```
 = ADDED - includes/load.php file
-= CREATED - admin.php file minimal by moving most of the code into includes/load.php
+= IMPROVED - admin.php file minimal by moving most of the code into includes/load.php
 = FIXED - 'user-type' error notifications
 ```
 ###### v2.0.1
