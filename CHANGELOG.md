@@ -1,6 +1,10 @@
 # CHANGELOG
 
 ## Version 2
+###### v2.4
+```
+= FIXED - includes/use-type.php bugs
+```
 ###### v2.3
 ```
 = ADDED - 'menu_position' admin parameter
