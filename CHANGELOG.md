@@ -1,6 +1,10 @@
 # CHANGELOG
 
 ## Version 2
+###### v2.4.2
+```
+= FIXED - Check if 'DilazPanel' class has been loaded in includes/load.php
+```
 ###### v2.4.1
 ```
 = ADDED - /config-sample.php - Helps in preserving config parameters during updates
