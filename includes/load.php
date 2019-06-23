@@ -66,6 +66,13 @@ if (!is_plugin_active(DILAZ_PANEL_PLUGIN_FILE)) {
 	});
 	
 	return;
+	
+} else {
+	
+	# Check PHP version if Dilaz Panel plugin is enabled
+	if (version_compare(PHP_VERSION, DILAZ_PANEL_MIN_PHP, '<')) {
+		echo '<div id="message" class="dilaz-panel-notice notice notice-warning"><p><strong>'. sprintf(__('PHP version %1$s detected. It is recommended that you upgrade to PHP version %2$s or to the most recent release of PHP', 'dilaz-panel'), PHP_VERSION, DILAZ_PANEL_MIN_PHP) .'</strong></p></div>';
+	}
 }
 
 # Lets ensure the DilazPanel class is loaded
