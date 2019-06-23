@@ -2,6 +2,12 @@
 
 ## Version 2
 
+###### v2.4.7
+```
+= ADDED - PHP version check
+= FIXED - 'DilazPanelFunctions' class check in custom-options-sample.php
+```
+
 ###### v2.4.6
 ```
 = REMOVED 'options_cap' from config parameters
