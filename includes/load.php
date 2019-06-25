@@ -114,7 +114,7 @@ if (!is_plugin_active(DILAZ_PANEL_PLUGIN_FILE)) {
 	add_action('admin_notices', function() {
 		
 		# check if its plugin when in theme use type
-		if (FALSE !== strpos(dirname(__FILE__), '\plugins\\') || FALSE !== strpos(dirname(__FILE__), '/plugins/')) {
+		if ('plugin' == dilaz_panel_get_use_type()) {
 			
 			if (!function_exists('get_plugin_data')) require_once ABSPATH . 'wp-admin/includes/plugin.php';
 			
