@@ -18,6 +18,9 @@ defined('ABSPATH') || exit;
 	
 /* Define min PHP requirement */
 defined('DILAZ_PANEL_MIN_PHP') || define('DILAZ_PANEL_MIN_PHP', 5.5);
+	
+# Define min WP requirement
+defined('DILAZ_PANEL_MIN_WP') || define('DILAZ_PANEL_MIN_WP', 4.5);
 
 # Dilaz Panel plugin file constant
 defined('DILAZ_PANEL_PLUGIN_FILE') || define('DILAZ_PANEL_PLUGIN_FILE', 'dilaz-panel/dilaz-panel.php');
