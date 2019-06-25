@@ -25,6 +25,17 @@ defined('DILAZ_PANEL_MIN_WP') || define('DILAZ_PANEL_MIN_WP', 4.5);
 # Dilaz Panel plugin file constant
 defined('DILAZ_PANEL_PLUGIN_FILE') || define('DILAZ_PANEL_PLUGIN_FILE', 'dilaz-panel/dilaz-panel.php');
 
+# Dilaz panel get use type based on current panel usage
+function dilaz_panel_get_use_type() {
+	if (FALSE !== strpos(dirname(__FILE__), '\plugins\\') || FALSE !== strpos(dirname(__FILE__), '/plugins/')) {
+		return 'plugin';
+	} else if (FALSE !== strpos(dirname(__FILE__), '\themes\\') || FALSE !== strpos(dirname(__FILE__), '/themes/')) {
+		return 'theme';
+	} else {
+		return FALSE;
+	}
+}
+
 # Check if DilazPanel plugin is installed/activated
 if (!function_exists('is_plugin_active')) include_once ABSPATH . 'wp-admin/includes/plugin.php';
 if (!is_plugin_active(DILAZ_PANEL_PLUGIN_FILE)) {
