@@ -136,7 +136,7 @@ if (!is_plugin_active(DILAZ_PANEL_PLUGIN_FILE)) {
 			$item_type = 'plugin';
 			
 		# check if its theme when in plugin use type
-		} else if (FALSE !== strpos(dirname(__FILE__), '\themes\\') || FALSE !== strpos(dirname(__FILE__), '/themes/')) {
+		} else if ('theme' == dilaz_panel_get_use_type()) {
 			$theme_object = wp_get_theme();
 			$item_name    = is_child_theme() ? $theme_object['Template'] : $theme_object['Name'];
 			$item_type    = 'theme';
