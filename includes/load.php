@@ -162,7 +162,11 @@ if (!is_plugin_active(DILAZ_PANEL_PLUGIN_FILE)) {
 	# Check PHP version if Dilaz Panel plugin is enabled
 	if (version_compare(PHP_VERSION, DILAZ_PANEL_MIN_PHP, '<')) {
 		add_action('admin_notices', function() {
-			echo '<div id="message" class="dilaz-panel-notice notice notice-warning"><p><strong>'. sprintf(__('PHP version %1$s detected. It is recommended that you upgrade to PHP version %2$s or to the most recent release of PHP', 'dilaz-panel'), PHP_VERSION, DILAZ_PANEL_MIN_PHP) .'</strong></p></div>';
+			
+			$use_type_name   = dilaz_panel_get_use_type();
+			$use_type_params = 'plugin' == $use_type_name ? dilaz_panel_plugin_params() : dilaz_panel_theme_params();
+			
+			echo '<div id="message" class="dilaz-panel-notice notice notice-warning"><p><strong>'. sprintf(__('PHP version <em>%1$s</em> detected. <em>%2$s</em> %3$s recommends that you upgrade to PHP version <em>%4$s</em> or the most recent release of PHP.', 'dilaz-panel'), PHP_VERSION, $use_type_params['item_name'], $use_type_name, DILAZ_PANEL_MIN_PHP) .'</strong></p></div>';
 		});
 	}
 }
