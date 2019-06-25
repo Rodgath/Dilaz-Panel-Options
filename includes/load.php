@@ -36,6 +36,34 @@ function dilaz_panel_get_use_type() {
 	}
 }
 
+# Dilaz panel theme object
+function dilaz_panel_theme_params() {
+	
+	$theme_object  = wp_get_theme();
+	$theme_name    = is_child_theme() ? $theme_object['Template'] : $theme_object['Name'];
+	$theme_name_lc = strtolower($theme_name);
+	$theme_version = $theme_object['Version'];
+	$theme_uri     = is_child_theme() ? get_stylesheet_directory_uri() : get_template_directory_uri();
+	$theme_folder  = basename($theme_uri);
+	
+	/* 
+	 * If the theme folder name string appears multiple times,
+	 * lets split the string as shown below and focus only 
+	 * on the last theme folder name string
+	 */
+	$split_1      = explode('includes', dirname(__FILE__));
+	$split_2      = explode($theme_folder, $split_1[0]);
+	$split_2_last = array_pop($split_2);
+	
+	$use_type_parameters = array(
+		'item_name'    => $theme_name,
+		'item_version' => $theme_version,
+		'dir_url'      => trailingslashit($theme_uri . wp_normalize_path($split_2_last)),
+	);
+	
+	return $use_type_parameters;
+}
+
 # Check if DilazPanel plugin is installed/activated
 if (!function_exists('is_plugin_active')) include_once ABSPATH . 'wp-admin/includes/plugin.php';
 if (!is_plugin_active(DILAZ_PANEL_PLUGIN_FILE)) {
