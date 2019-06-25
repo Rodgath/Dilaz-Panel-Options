@@ -64,6 +64,50 @@ function dilaz_panel_theme_params() {
 	return $use_type_parameters;
 }
 
+# Dilaz panel plugin object
+function dilaz_panel_plugin_params() {
+	
+	if (!function_exists('get_plugin_data')) {
+		require_once ABSPATH . 'wp-admin/includes/plugin.php';
+	}
+	
+	$plugin_data = [];
+	
+	$plugins_dir     = ABSPATH . 'wp-content/plugins/'; 
+	$plugin_basename = plugin_basename(__FILE__);
+	$plugin_folder   = strtok($plugin_basename, '/');
+	
+	# use global to check plugin data from all PHP files within plugin main folder
+	foreach (glob(trailingslashit($plugins_dir . $plugin_folder) . '*.php') as $file) {
+		$plugin_data = get_plugin_data($file);
+		
+		# lets ensure we don't return empty plugin data
+		if (empty($plugin_data['Name'])) continue; else break;
+	}
+	
+	$plugin_name    = $plugin_data['Name'];
+	$plugin_name_lc = strtolower($plugin_name);
+	$plugin_version = $plugin_data['Version'];
+	
+	/* 
+	 * If the theme name string multiple times, lets
+	 * split the string as show below and focus only 
+	 * on the last theme name string
+	 */
+	$split_1      = explode('includes', plugin_dir_url(__FILE__));
+	$split_2      = explode($plugin_folder, $split_1[0]);
+	$split_2_last = array_pop($split_2);
+	$split_3      = array($split_2_last, implode($plugin_folder, $split_2));
+	
+	$use_type_parameters = array(
+		'item_name'    => $plugin_name,
+		'item_version' => $plugin_version,
+		'dir_url'      => trailingslashit($split_3[1].$plugin_folder.wp_normalize_path($split_3[0])),
+	);
+
+	return $use_type_parameters;
+}
+
 # Check if DilazPanel plugin is installed/activated
 if (!function_exists('is_plugin_active')) include_once ABSPATH . 'wp-admin/includes/plugin.php';
 if (!is_plugin_active(DILAZ_PANEL_PLUGIN_FILE)) {
