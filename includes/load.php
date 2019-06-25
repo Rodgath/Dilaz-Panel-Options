@@ -149,7 +149,9 @@ if (!is_plugin_active(DILAZ_PANEL_PLUGIN_FILE)) {
 				echo '<div id="message" class="dilaz-panel-notice notice notice-warning"><p><strong>'. sprintf(__('Please %1$sactivate%2$s <em>Dilaz Panel</em> plugin. It is required by "<em>%3$s</em>" %4$s.', 'dilaz-panel'), '<a href="'. $activation_url .'">', '</a>', $item_name, $item_type) .'</strong></p></div>';
 			});
 		} else {
-			echo '<div id="message" class="dilaz-panel-notice notice notice-warning"><p><strong>'. sprintf(__('Please %1$sinstall%2$s <em>Dilaz Panel</em> plugin. It is required by "<em>%3$s</em>" %4$s.', 'dilaz-panel'), '<a href="'. admin_url('plugin-install.php?tab=upload') .'">', '</a>', $item_name, $item_type) .'</strong></p></div>';
+			add_action('admin_notices', function() {
+				echo '<div id="message" class="dilaz-panel-notice notice notice-warning"><p><strong>'. sprintf(__('Please %1$sinstall%2$s <em>Dilaz Panel</em> plugin. It is required by "<em>%3$s</em>" %4$s.', 'dilaz-panel'), '<a href="'. admin_url('plugin-install.php?tab=upload') .'">', '</a>', $item_name, $item_type) .'</strong></p></div>';
+			});
 		}
 	});
 	
