@@ -56,6 +56,7 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 	
 } else {
 	
+	# Show "use_type" parameter value error incase the user adds neither 'plugin' nor 'theme'
 	add_action('admin_notices', function() {
 	
 		# check if panel is used in 'theme' or 'plugin'
