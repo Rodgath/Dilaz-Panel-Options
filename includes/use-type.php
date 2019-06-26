@@ -50,7 +50,7 @@ if (isset($parameters['use_type']) && $parameters['use_type'] == 'theme') {
 		
 	} else {
 		
-		dilaz_panel_plugin_params();
+		$use_type_parameters = dilaz_panel_plugin_params();
 		
 	}
 }
