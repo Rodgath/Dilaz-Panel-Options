@@ -141,10 +141,19 @@ $options[] = array(
 		$options[] = array(
 			'id'    => 'textarea',
 			'name'  => __('Textarea:', 'dilaz-panel'),
-			'desc'  => __('Enter text content. HTML tags are enabled.', 'dilaz-panel'),
+			'desc'  => __('Enter text content. HTML tags are NOT enabled (use code field for HTML tags).', 'dilaz-panel'),
 			'type'  => 'textarea',
 			'args'  => array('rows' => 5),
 			'std'   => 'Sample textarea content goes here.',
+			'class' => ''
+		);
+		$options[] = array(
+			'id'    => 'code',
+			'name'  => __('Code:', 'dilaz-panel'),
+			'desc'  => __('Enter code content. HTML tags are enabled.', 'dilaz-panel'),
+			'type'  => 'code',
+			'args'  => array('rows' => 5),
+			'std'   => '<b>Sample code content goes here.</b>',
 			'class' => ''
 		);
 		$options[] = array(
