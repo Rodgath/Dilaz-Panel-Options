@@ -2,12 +2,20 @@
 
 ## Version 2
 
+###### v2.4.8
+```
+= ADDED - WordPress version check
+= ADDED - dilaz_panel_get_use_type() to check current panel "use type"
+= ADDED - dilaz_panel_theme_params() to fetch theme object parameters
+= ADDED - dilaz_panel_plugin_params() to fetch plugin object parameters
+= ADDED - new "use_type" check incase the user adds neither 'plugin' nor 'theme'
+= ADDED - code field sample options in default-options.php
+````
 ###### v2.4.7
 ```
 = ADDED - PHP version check
 = FIXED - 'DilazPanelFunctions' class check in custom-options-sample.php
 ```
-
 ###### v2.4.6
 ```
 = REMOVED 'options_cap' from config parameters
