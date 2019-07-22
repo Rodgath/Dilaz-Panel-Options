@@ -2,6 +2,11 @@
 
 ## Version 2
 
+###### v2.4.9
+```
+= IPROVED - 'radioimage' field sample
+= ADDED - 'radioimage_tiled' field sample
+```
 ###### v2.4.8
 ```
 = ADDED - WordPress version check
