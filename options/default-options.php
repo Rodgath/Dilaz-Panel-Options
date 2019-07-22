@@ -644,11 +644,24 @@ $options[] = array(
 			'desc' => __('Images used as radio option fields.', 'dilaz-panel'),
 			'type' => 'radioimage',
 			'options' => array(
-				'teal.css'  => $parameters['dir_url'] .'assets/images/colors/teal.png',
-				'cyan.css'  => $parameters['dir_url'] .'assets/images/colors/cyan.png',
-				'amber.css' => $parameters['dir_url'] .'assets/images/colors/amber.png',
+				'teal.css'  => array('src' => $parameters['dir_url'] .'assets/images/colors/teal.png', 'alt' => 'teal'),
+				'cyan.css'  => array('src' => $parameters['dir_url'] .'assets/images/colors/cyan.png', 'alt' => 'cyan'),
+				'amber.css' => array('src' => $parameters['dir_url'] .'assets/images/colors/amber.png', 'alt' => 'amber'),
 			),
 			'std'   => 'amber.css',
+			'class' => ''
+		);
+		$options[] = array(
+			'id'   => 'radioimage_tiled',
+			'name' => __('Radio Image Tiled Background:', 'dilaz-panel'),
+			'desc' => __('Images used as radio option fields.', 'dilaz-panel'),
+			'type' => 'radioimage',
+			'options' => array(
+				$parameters['dir_url'] .'assets/images/bg/crissXcross.png' => array('src' => $parameters['dir_url'] .'assets/images/bg/crissXcross.png', 'alt' => 'crissXcross'),
+				$parameters['dir_url'] .'assets/images/bg/nistri.png' => array('src' => $parameters['dir_url'] .'assets/images/bg/nistri.png', 'alt' => 'nistri'),
+			),
+			'std'   => $parameters['dir_url'] .'assets/images/bg/nistri.png',
+			'args'  => array('tiled_bg' => true),
 			'class' => ''
 		);
 		$options[] = array(
