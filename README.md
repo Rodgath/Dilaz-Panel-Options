@@ -36,7 +36,7 @@ __NOTE:__
 
 ## *config.php* parameters
 
-| Parameter     | Type    | Default | Since  | Details |
+| Parameter     | Type    | Default | Since Dilaz Panel   | Details |
 | :------------- |:----------|:----------| :-------------| :----- |
 | `option_name`   | *string* | dilaz_options | Dilaz Panel v2.3 | Used to save settings. Must be unique. |
 | `option_prefix` | *string* | dilaz_panel | Dilaz Panel v2.0 | Not used to save settings. Must be unique. |
@@ -59,7 +59,7 @@ __NOTE:__
 | `doc_url` | *string* | # | Dilaz Panel v2.0 | Documentation url. Leave empty to disable. |
 | `support_title` | *string* | Support | Dilaz Panel v2.0 | Support title. |
 | `support_url` | *string* | # | Dilaz Panel v2.0 | Support url. Leave empty to disable. |
-| ~~`options_cap`~~ | *string* | manage_options | Dilaz Panel v2.0 | __Deprecated__ since v2.7.8. |
+| ~~`options_cap`~~ | *string* | manage_options | Dilaz Panel v2.0 | __Deprecated__ since Dilaz Panel v2.7.8. |
 
 *** 
 
