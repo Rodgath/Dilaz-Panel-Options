@@ -58,6 +58,7 @@ function dilaz_panel_theme_params() {
 	$use_type_parameters = array(
 		'item_name'    => $theme_name,
 		'item_version' => $theme_version,
+		'item_url'     => trailingslashit($theme_uri),
 		'dir_url'      => trailingslashit($theme_uri . wp_normalize_path($split_2_last)),
 	);
 	
@@ -102,6 +103,7 @@ function dilaz_panel_plugin_params() {
 	$use_type_parameters = array(
 		'item_name'    => $plugin_name,
 		'item_version' => $plugin_version,
+		'item_url'     => trailingslashit($split_3[1].$plugin_folder),
 		'dir_url'      => trailingslashit($split_3[1].$plugin_folder.wp_normalize_path($split_3[0])),
 	);
 
