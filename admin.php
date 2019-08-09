@@ -6,7 +6,7 @@
 ||
 || @package     Dilaz Panel
 || @subpackage  Panel
-|| @version     2.4.9
+|| @version     2.4.10
 || @since       Dilaz Panel 1.0
 || @author      Rodgath, https://github.com/Rodgath
 || @copyright   Copyright (C) 2017, Rodgath LTD
