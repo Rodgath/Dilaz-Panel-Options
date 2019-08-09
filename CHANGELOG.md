@@ -2,6 +2,12 @@
 
 ## Version 2
 
+
+###### v2.4.10
+```
+= ADDED - 'item_url' to use-type parameters
+= UPDATED - default-options.php
+```
 ###### v2.4.9
 ```
 = IPROVED - 'radioimage' field sample
