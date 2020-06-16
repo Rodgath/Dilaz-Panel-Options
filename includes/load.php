@@ -144,7 +144,7 @@ if (!is_plugin_active(DILAZ_PANEL_PLUGIN_FILE)) {
 			
 			$plugin_data = [];
 			
-			$plugins_dir     = ABSPATH . 'wp-content/plugins/'; 
+			$plugins_dir     = trailingslashit(WP_PLUGIN_DIR);
 			$plugin_basename = plugin_basename(__FILE__);
 			$plugin_folder   = strtok($plugin_basename, '/');
 			
@@ -180,8 +180,8 @@ if (!is_plugin_active(DILAZ_PANEL_PLUGIN_FILE)) {
 
 # Lets ensure the DilazPanel class is loaded
 if (!class_exists('DilazPanel')) { 
-	if (file_exists(ABSPATH .'wp-content/plugins/'. DILAZ_PANEL_PLUGIN_FILE)) {
-		require_once ABSPATH .'wp-content/plugins/'. DILAZ_PANEL_PLUGIN_FILE;
+	if (file_exists(trailingslashit(WP_PLUGIN_DIR). DILAZ_PANEL_PLUGIN_FILE)) {
+		require_once trailingslashit(WP_PLUGIN_DIR). DILAZ_PANEL_PLUGIN_FILE;
 	} else {
 		return;
 	}
@@ -189,8 +189,8 @@ if (!class_exists('DilazPanel')) {
 
 # Lets ensure the DilazPanelFunctions class is loaded
 if (!class_exists('DilazPanelFunctions')) { 
-	if (file_exists(ABSPATH .'wp-content/plugins/dilaz-panel/includes/functions.php')) {
-		require_once ABSPATH .'wp-content/plugins/dilaz-panel/includes/functions.php';
+	if (file_exists(trailingslashit(WP_PLUGIN_DIR) . 'dilaz-panel/includes/functions.php')) {
+		require_once trailingslashit(WP_PLUGIN_DIR) . 'dilaz-panel/includes/functions.php';
 	}
 }
 
