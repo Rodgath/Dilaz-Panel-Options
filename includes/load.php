@@ -74,7 +74,7 @@ function dilaz_panel_plugin_params() {
 	
 	$plugin_data = [];
 	
-	$plugins_dir     = ABSPATH . 'wp-content/plugins/'; 
+	$plugins_dir     = trailingslashit(WP_PLUGIN_DIR); 
 	$plugin_basename = plugin_basename(__FILE__);
 	$plugin_folder   = strtok($plugin_basename, '/');
 	
