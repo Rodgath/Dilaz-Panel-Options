@@ -70,12 +70,12 @@ $options[] = array(
 			'std'   => '40',
 			'class' => ''
 		);
-		$options[] = array(
-			'id'   => 'info',
-			'name' => __('Info Box Title', 'dilaz-panel'),
-			'desc' => __('Sample info description goes here.', 'dilaz-panel'),
-			'type' => 'info',
-		);
+		// $options[] = array(
+			// 'id'   => 'info',
+			// 'name' => __('Info Box Title', 'dilaz-panel'),
+			// 'desc' => __('Sample info description goes here.', 'dilaz-panel'),
+			// 'type' => 'info',
+		// );
 		$options[] = array(
 			'id'   => 'switchenable',
 			'name' => __('Switch Enable/Disable:', 'dilaz-panel'),
@@ -251,6 +251,7 @@ $options[] = array(
 			'std'  => '',
 			'args' => array(
 				'file_type' => 'image',
+				'show_thumb' => false,
 			),
 		);
 	
@@ -595,7 +596,7 @@ $options[] = array(
 		);
 		$options[] = array(
 			'id'   => 'font_2',
-			'name' => __('Font:', 'dilaz-panel'),
+			'name' => __('Font 2:', 'dilaz-panel'),
 			'desc' => __('Typography style with few option properties.', 'dilaz-panel'),
 			'type' => 'font',
 			'options' => array( 
