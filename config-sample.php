@@ -9,7 +9,7 @@
 || @since       Dilaz Panel 2.4.1
 || @author      Rodgath, https://github.com/Rodgath
 || @copyright   Copyright (C) 2017, Rodgath LTD
-|| @link        https://github.com/Rodgath/Dilaz-Panel-Plugin
+|| @link        https://github.com/Rodgath/Dilaz-Panel
 || @License     GPL-2.0+
 || @License URI http://www.gnu.org/licenses/gpl-2.0.txt
 || 
