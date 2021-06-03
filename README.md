@@ -1,8 +1,8 @@
 # Dilaz Panel Options Sample
-This helps you to integrate [Dilaz Panel Plugin](https://github.com/Rodgath/Dilaz-Panel-Plugin) into your WordPress theme/plugin development. 
+This helps you to integrate [Dilaz Panel Plugin](https://github.com/Rodgath/Dilaz-Panel) into your WordPress theme/plugin development. 
 
 ## How to use
-1. Download and install [Dilaz Panel](https://github.com/Rodgath/Dilaz-Panel-Plugin/archive/master.zip) plugin.
+1. Download and install [Dilaz Panel](https://github.com/Rodgath/Dilaz-Panel/archive/master.zip) plugin.
 2. Download [Dilaz Panel Options](https://github.com/Rodgath/Dilaz-Panel-Options/archive/master.zip).
 3. Add *Dilaz-Panel-Options* to the root directory of your theme or plugin. <br />
    i) For example: <br />
