@@ -6,7 +6,7 @@ This helps you to integrate [Dilaz Panel Plugin](https://github.com/Rodgath/Dila
 2. Download [Dilaz Panel Options](https://github.com/Rodgath/Dilaz-Panel-Options/archive/master.zip).
 3. Add *Dilaz-Panel-Options* to the root directory of your theme or plugin. <br />
    i) For example: <br />
-      > *wp-content/plugins/__theme-name__/Dilaz-Panel-Options*
+      > *wp-content/themes/__theme-name__/Dilaz-Panel-Options*
       
       __OR__
       
