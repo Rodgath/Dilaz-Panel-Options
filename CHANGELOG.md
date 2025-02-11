@@ -3,6 +3,10 @@
 ## Version 2
 
 
+###### v2.5.1
+```
+= FIXED - Text domain was loading too early, before other plugins/themes were initialized.
+```
 ###### v2.5.0
 ```
 = ADDED - Integration with main plugin namespace
