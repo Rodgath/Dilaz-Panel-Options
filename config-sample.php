@@ -12,11 +12,11 @@
 || @link        https://github.com/Rodgath/Dilaz-Panel
 || @License     GPL-2.0+
 || @License URI http://www.gnu.org/licenses/gpl-2.0.txt
-|| 
+||
 || NOTE: Rename this file from "config-sample.php" to "config.php". If you
 ||       don't rename it, all your config parameters will be overwritten
 ||       when updating Dilaz Panel Options.
-|| 
+||
 */
 
 defined('ABSPATH') || exit;

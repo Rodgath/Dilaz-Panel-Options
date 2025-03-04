@@ -13,9 +13,9 @@
 || @link        https://github.com/Rodgath/Dilaz-Panel
 || @License     GPL-2.0+
 || @License URI http://www.gnu.org/licenses/gpl-2.0.txt
-|| 
-|| NOTE: This options panel requires Dilaz Panel plugin installed. 
-|| 
+||
+|| NOTE: This options panel requires Dilaz Panel plugin installed.
+||
 */
 
 defined('ABSPATH') || exit;

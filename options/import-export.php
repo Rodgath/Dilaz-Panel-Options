@@ -11,7 +11,7 @@
 || @copyright  Copyright (C) 2017, Rodgath LTD
 || @link       https://github.com/Rodgath/Dilaz-Panel
 || @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-|| 
+||
 */
 
 defined('ABSPATH') || exit;
@@ -26,7 +26,7 @@ defined('ABSPATH') || exit;
  * @return array
  */
 add_filter('panel_option_filter_'. $parameters['option_name'], function($options) {
-	
+
 	# MAIN TAB - Export / Import
 	# =============================================================================================
 	$options[] = array(
@@ -34,14 +34,14 @@ add_filter('panel_option_filter_'. $parameters['option_name'], function($options
 		'type' => 'heading',
 		'icon' => 'mdi-download'
 	);
-		
+
 		# SUB TAB - Export
 		# *****************************************************************************************
 		$options[] = array(
 			'name' => __('Export', 'dilaz-panel'),
 			'type' => 'subheading',
 		);
-			
+
 			# FIELDS - Export
 			# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 			$options[] = array(
@@ -52,14 +52,14 @@ add_filter('panel_option_filter_'. $parameters['option_name'], function($options
 				'std'   => '',
 				'class' => ''
 			);
-		
+
 		# SUB TAB - Import
 		# *****************************************************************************************
 		$options[] = array(
 			'name' => __('Import', 'dilaz-panel'),
 			'type' => 'subheading',
 		);
-			
+
 			# FIELDS - Import
 			# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 			$options[] = array(
@@ -70,8 +70,8 @@ add_filter('panel_option_filter_'. $parameters['option_name'], function($options
 				'std'   => '',
 				'class' => 'last'
 			);
-		
-		
+
+
 	return $options;
-	
+
 }, 100);

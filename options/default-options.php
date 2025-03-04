@@ -11,12 +11,12 @@
 || @copyright  Copyright (C) 2017, Rodgath LTD
 || @link       https://github.com/Rodgath/Dilaz-Panel
 || @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-|| 
-|| NOTE 1: This file is for experimetation and demo purposes. Do not use this file to add your options, 
+||
+|| NOTE 1: This file is for experimetation and demo purposes. Do not use this file to add your options,
 ||         othersise all your options and settings will be overwritten when updating this panel.
-|| 
+||
 || NOTE 2: Use "options.php" file to add your plugin/theme options.
-|| 
+||
 */
 
 defined('ABSPATH') || exit;
@@ -30,7 +30,7 @@ $options[] = array(
 	'type' => 'heading',
 	'icon' => 'mdi-settings'
 );
-	
+
 	# SUB TAB - Simple Options Set
 	# *****************************************************************************************
 	// $options[] = array(
@@ -38,7 +38,7 @@ $options[] = array(
 		// 'name' => __('General', 'dilaz-panel'),
 		// 'type' => 'subheading',
 	// );
-		
+
 		# FIELDS - Alpha Tab 1
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$options[] = array(
@@ -53,9 +53,9 @@ $options[] = array(
 			'desc' => __('Set range between two minimum and maximum values.', 'dilaz-panel'),
 			'type' => 'range',
 			'args' => array(
-				'min'    => array( 8, 	__('Min', 'dilaz-panel') ), 
-				'max'    => array( 100,	__('Max', 'dilaz-panel') ), 
-				'step'   => '2', 
+				'min'    => array( 8, 	__('Min', 'dilaz-panel') ),
+				'max'    => array( 100,	__('Max', 'dilaz-panel') ),
+				'step'   => '2',
 				'prefix' => '',
 				'suffix' => '%'
 			),
@@ -82,7 +82,7 @@ $options[] = array(
 			'desc' => __('Enable/disable switch option.', 'dilaz-panel'),
 			'type' => 'switch',
 			'options' => array(
-				'enable'  => __('Enable', 'dilaz-panel'), 
+				'enable'  => __('Enable', 'dilaz-panel'),
 				'disable' => __('Disable', 'dilaz-panel'),
 			),
 			'std'  => 'disable',
@@ -94,7 +94,7 @@ $options[] = array(
 			'desc' => __('On/Off switch option.', 'dilaz-panel'),
 			'type' => 'switch',
 			'options' => array(
-				1 => __('On', 'dilaz-panel'), 
+				1 => __('On', 'dilaz-panel'),
 				0 => __('Off', 'dilaz-panel'),
 			),
 			'std'  => 0,
@@ -106,7 +106,7 @@ $options[] = array(
 			'desc' => __('Set multiple options using buttonset.', 'dilaz-panel'),
 			'type' => 'buttonset',
 			'options' => array(
-				'yes'   => __('Yes', 'dilaz-panel'), 
+				'yes'   => __('Yes', 'dilaz-panel'),
 				'no'    => __('No', 'dilaz-panel'),
 				'maybe' => __('Maybe', 'dilaz-panel')
 			),
@@ -118,7 +118,7 @@ $options[] = array(
 			'name' => __('Background:', 'dilaz-panel'),
 			'desc' => __('Background style.', 'dilaz-panel'),
 			'type' => 'background',
-			'options' => array( 
+			'options' => array(
 				'image'      => true,
 				'repeat'     => true,
 				'size'       => true,
@@ -127,14 +127,14 @@ $options[] = array(
 				'origin'     => true,
 				'color'      => true,
 			),
-			'std'   => array( 
-				'image'      => '', 
+			'std'   => array(
+				'image'      => '',
 				'repeat'     => '',
 				'size'       => '',
 				'position'   => '',
 				'attachment' => '',
 				'origin'     => '',
-				'color'      => '', 
+				'color'      => '',
 			),
 			'class' => ''
 		);
@@ -221,7 +221,7 @@ $options[] = array(
 	'type' => 'heading',
 	'icon' => 'mdi-monitor'
 );
-	
+
 	# SUB TAB - Image
 	# *****************************************************************************************
 	$options[] = array(
@@ -229,7 +229,7 @@ $options[] = array(
 		'name' => __('Image', 'dilaz-panel'),
 		'type' => 'subheading',
 	);
-		
+
 		# FIELDS - Image options
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$options[] = array(
@@ -239,11 +239,11 @@ $options[] = array(
 			'type' => 'upload',
 			'std'  => '',
 			'args' => array(
-				'file_type' => 'image', 
+				'file_type' => 'image',
 				'multiple'  => true
 			),
 		);
-		$options[] = array( 
+		$options[] = array(
 			'id'   => 'image_single',
 			'name' => __('Image File:', 'dilaz-panel'),
 			'desc' => __('Select/Upload single image file from media library.', 'dilaz-panel'),
@@ -254,7 +254,7 @@ $options[] = array(
 				'show_thumb' => false,
 			),
 		);
-	
+
 	# SUB TAB - Audio
 	# *****************************************************************************************
 	$options[] = array(
@@ -262,7 +262,7 @@ $options[] = array(
 		'name' => __('Audio', 'dilaz-panel'),
 		'type' => 'subheading',
 	);
-		
+
 		# FIELDS - Audio options
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$options[] = array(
@@ -272,7 +272,7 @@ $options[] = array(
 			'type' => 'upload',
 			'std'  => '',
 			'args' => array(
-				'file_type' => 'audio',  
+				'file_type' => 'audio',
 				'multiple'  => true
 			),
 		);
@@ -286,7 +286,7 @@ $options[] = array(
 				'file_type' => 'audio',
 			),
 		);
-	
+
 	# SUB TAB - Video
 	# *****************************************************************************************
 	$options[] = array(
@@ -294,7 +294,7 @@ $options[] = array(
 		'name' => __('Video', 'dilaz-panel'),
 		'type' => 'subheading',
 	);
-		
+
 		# FIELDS - Video options
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$options[] = array(
@@ -327,7 +327,7 @@ $options[] = array(
 	'type' => 'heading',
 	'icon' => 'mdi-format-color-fill'
 );
-	
+
 	# SUB TAB - Color
 	# *****************************************************************************************
 	// $options[] = array(
@@ -335,7 +335,7 @@ $options[] = array(
 		// 'name' => __('Color', 'dilaz-panel'),
 		// 'type' => 'subheading',
 	// );
-		
+
 		# FIELDS - Color options
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$options[] = array(
@@ -367,7 +367,7 @@ $options[] = array(
 			'id'   => 'color',
 			'name' => __('Color:', 'dilaz-panel'),
 			'desc' => __('Single color option.', 'dilaz-panel'),
-			'type' => 'color', 
+			'type' => 'color',
 			'std'  => '#ff2211',
 			'class' => ''
 		);
@@ -380,7 +380,7 @@ $options[] = array(
 	'type' => 'heading',
 	'icon' => 'mdi-view-list'
 );
-	
+
 	# TAB - Repeatable Options Set
 	# *****************************************************************************************
 	// $options[] = array(
@@ -388,7 +388,7 @@ $options[] = array(
 		// 'name' => __('', 'dilaz-panel'),
 		// 'type'  => 'subheading'
 	// );
-		
+
 		# FIELDS - Alpha Tab 1
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$options[] = array(
@@ -404,10 +404,10 @@ $options[] = array(
 			),
 			'options' => array(
 				array(
-					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+					array('label' => '', 'value' => 'Row 1 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 2 - Value 2'), 
+					array('label' => '', 'value' => 'Row 2 - Value 2'),
 				)
 			),
 		);
@@ -424,16 +424,16 @@ $options[] = array(
 			),
 			'options' => array(
 				array(
-					array('label' => 'Label One', 'value' => 'Row 1 - Value 1', 'size' => 15), 
-					array('label' => 'Label Two', 'value' => 'Row 1 - Value 2', 'size' => 15), 
-					array('label' => 'Label Three', 'value' => 'Row 1 - Value 3', 'size' => 15), 
-					array('label' => 'Label Four', 'value' => 'Row 1 - Value 4', 'size' => 15), 
+					array('label' => 'Label One', 'value' => 'Row 1 - Value 1', 'size' => 15),
+					array('label' => 'Label Two', 'value' => 'Row 1 - Value 2', 'size' => 15),
+					array('label' => 'Label Three', 'value' => 'Row 1 - Value 3', 'size' => 15),
+					array('label' => 'Label Four', 'value' => 'Row 1 - Value 4', 'size' => 15),
 				),
 				array(
-					array('label' => 'Label One', 'value' => 'Row 2 - Value 1', 'size' => 15), 
-					array('label' => 'Label Two', 'value' => 'Row 2 - Value 2', 'size' => 15), 
-					array('label' => 'Label Three', 'value' => 'Row 2 - Value 3', 'size' => 15), 
-					array('label' => 'Label Four', 'value' => 'Row 2 - Value 4', 'size' => 15), 
+					array('label' => 'Label One', 'value' => 'Row 2 - Value 1', 'size' => 15),
+					array('label' => 'Label Two', 'value' => 'Row 2 - Value 2', 'size' => 15),
+					array('label' => 'Label Three', 'value' => 'Row 2 - Value 3', 'size' => 15),
+					array('label' => 'Label Four', 'value' => 'Row 2 - Value 4', 'size' => 15),
 				)
 			),
 		);
@@ -449,13 +449,13 @@ $options[] = array(
 			),
 			'options' => array(
 				array(
-					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+					array('label' => '', 'value' => 'Row 1 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+					array('label' => '', 'value' => 'Row 2 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 3 - Value 1'), 
+					array('label' => '', 'value' => 'Row 3 - Value 1'),
 				)
 			),
 		);
@@ -471,13 +471,13 @@ $options[] = array(
 			),
 			'options' => array(
 				array(
-					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+					array('label' => '', 'value' => 'Row 1 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+					array('label' => '', 'value' => 'Row 2 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 3 - Value 1'), 
+					array('label' => '', 'value' => 'Row 3 - Value 1'),
 				)
 			),
 		);
@@ -493,13 +493,13 @@ $options[] = array(
 			),
 			'options' => array(
 				array(
-					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+					array('label' => '', 'value' => 'Row 1 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+					array('label' => '', 'value' => 'Row 2 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 3 - Value 1'), 
+					array('label' => '', 'value' => 'Row 3 - Value 1'),
 				)
 			),
 		);
@@ -514,13 +514,13 @@ $options[] = array(
 			),
 			'options' => array(
 				array(
-					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+					array('label' => '', 'value' => 'Row 1 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+					array('label' => '', 'value' => 'Row 2 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 3 - Value 1'), 
+					array('label' => '', 'value' => 'Row 3 - Value 1'),
 				)
 			),
 		);
@@ -535,13 +535,13 @@ $options[] = array(
 			),
 			'options' => array(
 				array(
-					array('label' => '', 'value' => 'Row 1 - Value 1'), 
+					array('label' => '', 'value' => 'Row 1 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 2 - Value 1'), 
+					array('label' => '', 'value' => 'Row 2 - Value 1'),
 				),
 				array(
-					array('label' => '', 'value' => 'Row 3 - Value 1'), 
+					array('label' => '', 'value' => 'Row 3 - Value 1'),
 				)
 			),
 		);
@@ -554,7 +554,7 @@ $options[] = array(
 	'type' => 'heading',
 	'icon' => 'mdi-format-font'
 );
-	
+
 	# SUB TAB - Typography
 	# *****************************************************************************************
 	// $options[] = array(
@@ -562,7 +562,7 @@ $options[] = array(
 		// 'name' => __('Typography', 'dilaz-panel'),
 		// 'type' => 'subheading',
 	// );
-		
+
 		# FIELDS - Typography options
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$options[] = array(
@@ -570,23 +570,23 @@ $options[] = array(
 			'name' => __('Font:', 'dilaz-panel'),
 			'desc' => __('Typography style with many option properties.', 'dilaz-panel'),
 			'type' => 'font',
-			'options' => array( 
+			'options' => array(
 				'family' => true,
-				'backup' => true, 
+				'backup' => true,
 				'subset' => true,
 				'weight' => true,
-				'size'   => true, 
-				'height' => true, 
-				'style'  => true, 
-				'case'   => true, 
+				'size'   => true,
+				'height' => true,
+				'style'  => true,
+				'case'   => true,
 				'color'  => true
 			),
 			'std' => array(
-				'family' => 'Trebuchet', 
-				'backup' => false, 
-				'subset' => false, 
+				'family' => 'Trebuchet',
+				'backup' => false,
+				'subset' => false,
 				'weight' => false,
-				'size'   => '18', 
+				'size'   => '18',
 				'height' => false,
 				'style'  => false,
 				'case'   => false,
@@ -599,19 +599,19 @@ $options[] = array(
 			'name' => __('Font 2:', 'dilaz-panel'),
 			'desc' => __('Typography style with few option properties.', 'dilaz-panel'),
 			'type' => 'font',
-			'options' => array( 
-				'family' => true, 
-				'backup' => true, 
-				'subset' => false, 
-				'weight' => true, 
-				'size'   => true, 
-				'height' => true, 
-				'style'  => true, 
-				'case'   => true, 
-				'color'  => true, 
+			'options' => array(
+				'family' => true,
+				'backup' => true,
+				'subset' => false,
+				'weight' => true,
+				'size'   => true,
+				'height' => true,
+				'style'  => true,
+				'case'   => true,
+				'color'  => true,
 			),
 			'std' => array(
-				'family' => 'Trebuchet', 
+				'family' => 'Trebuchet',
 				'backup' => false,
 				'subset' => false,
 				'weight' => false,
@@ -632,7 +632,7 @@ $options[] = array(
 	'type' => 'heading',
 	'icon' => 'mdi-tune'
 );
-	
+
 	# SUB TAB - Choice
 	# *****************************************************************************************
 	// $options[] = array(
@@ -640,7 +640,7 @@ $options[] = array(
 		// 'name' => __('Choice', 'dilaz-panel'),
 		// 'type' => 'subheading',
 	// );
-	
+
 		# FIELDS - Choice options
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$options[] = array(
@@ -675,7 +675,7 @@ $options[] = array(
 			'desc' => __('Tiled radio options selection.', 'dilaz-panel'),
 			'type' => 'radio',
 			'options' => array(
-				'one'   => __('One', 'dilaz-panel'), 
+				'one'   => __('One', 'dilaz-panel'),
 				'two'   => __('Two', 'dilaz-panel'),
 				'three' => __('Three', 'dilaz-panel')
 			),
@@ -832,8 +832,8 @@ $options[] = array(
 			'name' => __('"Select2" Multi-Select Field:', 'dilaz-panel'),
 			'desc' => __('Select the preferred header type', 'dilaz-panel'),
 			'type' => 'multiselect',
-			'options' => array( 
-				'one'   => __('One', 'dilaz-panel'), 
+			'options' => array(
+				'one'   => __('One', 'dilaz-panel'),
 				'two'   => __('Two', 'dilaz-panel'),
 				'three' => __('Three', 'dilaz-panel'),
 				'four'  => __('Four', 'dilaz-panel')
@@ -847,8 +847,8 @@ $options[] = array(
 			'name' => __('Default Milti-Select Field:', 'dilaz-panel'),
 			'desc' => __('Select the preferred header type', 'dilaz-panel'),
 			'type' => 'multiselect',
-			'options' => array( 
-				'one'   => __('One', 'dilaz-panel'), 
+			'options' => array(
+				'one'   => __('One', 'dilaz-panel'),
 				'two'   => __('Two', 'dilaz-panel'),
 				'three' => __('Three', 'dilaz-panel'),
 				'four'  => __('Four', 'dilaz-panel')
@@ -861,8 +861,8 @@ $options[] = array(
 			'name' => __('"Select2" Select Field:', 'dilaz-panel'),
 			'desc' => __('Select the preferred header type', 'dilaz-panel'),
 			'type' => 'select',
-			'options' => array( 
-				'one'   => __('One', 'dilaz-panel'), 
+			'options' => array(
+				'one'   => __('One', 'dilaz-panel'),
 				'two'   => __('Two', 'dilaz-panel'),
 				'three' => __('Three', 'dilaz-panel'),
 				'four'  => __('Four', 'dilaz-panel')
@@ -876,8 +876,8 @@ $options[] = array(
 			'name' => __('Default Select Field:', 'dilaz-panel'),
 			'desc' => __('Select the preferred header type', 'dilaz-panel'),
 			'type' => 'select',
-			'options' => array( 
-				'one'   => __('One', 'dilaz-panel'), 
+			'options' => array(
+				'one'   => __('One', 'dilaz-panel'),
 				'two'   => __('Two', 'dilaz-panel'),
 				'three' => __('Three', 'dilaz-panel'),
 				'four'  => __('Four', 'dilaz-panel')
@@ -885,7 +885,7 @@ $options[] = array(
 			'std'   => 'normal',
 			'class' => ''
 		);
-		
+
 # TAB - Conditionals
 # =============================================================================================
 $options[] = array(
@@ -894,7 +894,7 @@ $options[] = array(
 	'type' => 'heading',
 	'icon' => 'mdi-toggle-switch'
 );
-	
+
 	# SUB TAB - Conditionals
 	# *****************************************************************************************
 	// $options[] = array(
@@ -902,7 +902,7 @@ $options[] = array(
 		// 'name' => __('Conditionals', 'dilaz-panel'),
 		// 'type' => 'subheading',
 	// );
-		
+
 		# FIELDS - Conditional options
 		# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		$options[] = array(
@@ -1029,6 +1029,6 @@ $options[] = array(
 			'req_cond'   => 'AND',
 			'req_action' => 'show',
 		);
-		
-	
+
+
 return wp_parse_args($options, $options);

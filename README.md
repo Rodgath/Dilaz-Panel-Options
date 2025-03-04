@@ -1,5 +1,5 @@
 # Dilaz Panel Options Sample
-This helps you to integrate [Dilaz Panel Plugin](https://github.com/Rodgath/Dilaz-Panel) into your WordPress theme/plugin development. 
+This helps you to integrate [Dilaz Panel Plugin](https://github.com/Rodgath/Dilaz-Panel) into your WordPress theme/plugin development.
 
 ## How to use
 1. Download and install [Dilaz Panel](https://github.com/Rodgath/Dilaz-Panel/archive/master.zip) plugin.
@@ -7,13 +7,13 @@ This helps you to integrate [Dilaz Panel Plugin](https://github.com/Rodgath/Dila
 3. Add *Dilaz-Panel-Options* to the root directory of your theme or plugin. <br />
    i) For example: <br />
       > *wp-content/themes/__theme-name__/Dilaz-Panel-Options*
-      
+
       __OR__
-      
+
       > *wp-content/plugins/__plugin-name__/Dilaz-Panel-Options* <br />
-      
+
    ii) You can optionally rename *Dilaz-Panel-Options* folder.
-4. Add the code provided below in your themes __functions.php__ file or in your plugin's __main/index__ file. 
+4. Add the code provided below in your themes __functions.php__ file or in your plugin's __main/index__ file.
 ```php
 /**
  * Admin Panel Options
@@ -23,7 +23,7 @@ require_once 'Dilaz-Panel-Options/admin.php';
 5. Open ```Dilaz-Panel-Options``` folder and rename ```config-sample.php``` to ```config.php```.
 6. Open ```Dilaz-Panel-Options/config.php``` and edit the parameters as you want. Simple guidelines are provided beside each parameter setting.
 7. Open ```Dilaz-Panel-Options/options``` folder and rename ```options-sample.php``` to ```options.php```.
-8. Open ```Dilaz-Panel-Options/options/options.php``` and add your admin options. 
+8. Open ```Dilaz-Panel-Options/options/options.php``` and add your admin options.
 
 ***
 
@@ -61,9 +61,9 @@ __NOTE:__
 | `support_url` | *string* | # | v2.0 | Support url. Leave empty to disable. |
 | ~~`options_cap`~~ | *string* | manage_options | v2.0 | __Deprecated__ since v2.7.8. |
 
-*** 
+***
 
-## Download 
+## Download
 
 To get a local working copy of the development repository, do:
 
@@ -74,8 +74,8 @@ as follows:
 
     wget --content-disposition https://github.com/Rodgath/Dilaz-Panel-Options/tarball/master
 
-OR 
+OR
 
     curl -LJO https://github.com/Rodgath/Dilaz-Panel-Options/tarball/master
-    
- 
+
+

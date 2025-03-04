@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*
 || --------------------------------------------------------------------------------------------
 || Custom Options' Fields Example
@@ -11,13 +11,13 @@
 || @copyright  Copyright (C) 2017, Rodgath LTD
 || @link       https://github.com/Rodgath/Dilaz-Panel
 || @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-|| 
+||
 || NOTE 1: Rename this file from "custom-options-sample.php" to "custom-options.php". If you
 ||         don't rename it, all your options and settings will be overwritten
 ||         when updating Dilaz Panel Options.
-|| 
+||
 || NOTE 2: Add all your theme/plugin custom options in this file
-|| 
+||
 */
 
 use DilazPanel\DilazPanelFunctions;
@@ -35,7 +35,7 @@ defined('ABSPATH') || exit;
  * @return array
  */
 add_filter('panel_option_filter_'. $parameters['option_name'], function($options) {
-	
+
 	# BOX - Test Beta
 	# =============================================================================================
 	$options[] = array(
@@ -44,7 +44,7 @@ add_filter('panel_option_filter_'. $parameters['option_name'], function($options
 		'type' => 'heading',
 		'icon' => 'mdi-settings'
 	);
-	
+
 		# TAB - Beta Tab 1
 		# *****************************************************************************************
 		$options[] = array(
@@ -52,7 +52,7 @@ add_filter('panel_option_filter_'. $parameters['option_name'], function($options
 			'name' => __('Custom Options Sub', 'dilaz-panel'),
 			'type' => 'subheading'
 		);
-			
+
 			# FIELDS - Beta Tab 1
 			# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 			$options[] = array(
@@ -61,7 +61,7 @@ add_filter('panel_option_filter_'. $parameters['option_name'], function($options
 				'desc'	  => '',
 				'type'	  => 'select',
 				'options' => array(
-					'one'   => __('One', 'dilaz-panel'), 
+					'one'   => __('One', 'dilaz-panel'),
 					'two'   => __('Two', 'dilaz-panel'),
 					'three' => __('Three', 'dilaz-panel')
 				),
@@ -73,7 +73,7 @@ add_filter('panel_option_filter_'. $parameters['option_name'], function($options
 				'desc'	  => '',
 				'type'	  => 'radio',
 				'options' => array(
-					'yes'   => __('Yes', 'dilaz-panel'), 
+					'yes'   => __('Yes', 'dilaz-panel'),
 					'no'    => __('No', 'dilaz-panel')
 				),
 				'std'     => 'no'
@@ -84,14 +84,14 @@ add_filter('panel_option_filter_'. $parameters['option_name'], function($options
 				'desc'	  => '',
 				'type'	  => 'radio',
 				'options' => array(
-					'yes'   => __('Yes', 'dilaz-panel'), 
+					'yes'   => __('Yes', 'dilaz-panel'),
 					'no'    => __('No', 'dilaz-panel')
 				),
 				'std'     => 'no'
 			);
-	
+
 	return $options;
-	
+
 }, 10);
 
 
@@ -105,38 +105,38 @@ add_filter('panel_option_filter_'. $parameters['option_name'], function($options
  * @return array
  */
 add_filter('panel_option_filter_'. $parameters['option_name'], function($options) {
-	
+
 	# array data to be inserted
 	$insert_custom_data = [];
-	
+
 	$insert_custom_data[] = array(
 		'id'	  => 'custom_2_b',
 		'name'	  => __('INSERTED - Custom Two B:', 'dilaz-panel'),
 		'desc'	  => __('Custom Two B inserted before Custom Two C.', 'dilaz-panel'),
 		'type'	  => 'radio',
 		'options' => array(
-			'yes'   => __('Yes', 'dilaz-panel'), 
+			'yes'   => __('Yes', 'dilaz-panel'),
 			'no'    => __('No', 'dilaz-panel')
 		),
 		'std'     => 'yes'
 	);
-	
+
 	$insert_custom_data[] = array(
 		'id'	  => 'custom_2_c',
 		'name'	  => __('INSERTED - Custom Two C:', 'dilaz-panel'),
 		'desc'	  => __('Custom Two C inserted before Custom Three.', 'dilaz-panel'),
 		'type'	  => 'radio',
 		'options' => array(
-			'yes'   => __('Yes', 'dilaz-panel'), 
+			'yes'   => __('Yes', 'dilaz-panel'),
 			'no'    => __('No', 'dilaz-panel')
 		),
 		'std'     => 'yes'
 	);
-	
+
 	$insert = DilazPanelFunctions\DilazPanelFunctions::insertField($options, 'custom_options_main', 'custom_3', $insert_custom_data, 'before');
-	
+
 	return $insert;
-	
+
 }, 10);
 
 
@@ -150,10 +150,10 @@ add_filter('panel_option_filter_'. $parameters['option_name'], function($options
  * @return array
  */
 add_filter('panel_option_filter_'. $parameters['option_name'], function($options) {
-	
+
 	# array data to be inserted
 	$insert_custom_data = [];
-	
+
 		# TAB - INSERTED Sub-Tab
 		# *****************************************************************************************
 		$insert_custom_data[] = array(
@@ -161,7 +161,7 @@ add_filter('panel_option_filter_'. $parameters['option_name'], function($options
 			'name' => __('INSERTED Sub-Tab [Before]', 'dilaz-panel'),
 			'type' => 'subheading'
 		);
-			
+
 			# FIELDS - INSERTED Sub-Tab fields
 			# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 			$insert_custom_data[] = array(
@@ -170,17 +170,17 @@ add_filter('panel_option_filter_'. $parameters['option_name'], function($options
 				'desc' => __('On/Off switch option.', 'dilaz-panel'),
 				'type' => 'switch',
 				'options' => array(
-					1 => __('On', 'dilaz-panel'), 
+					1 => __('On', 'dilaz-panel'),
 					0 => __('Off', 'dilaz-panel'),
 				),
 				'std'  => 1,
 				'class' => ''
 			);
-			
+
 	$insert = DilazPanelFunctions\DilazPanelFunctions::insertField($options, 'custom_options_main', 'custom_options_sub', $insert_custom_data, 'before');
-	
+
 	return $insert;
-	
+
 }, 10);
 
 
@@ -194,10 +194,10 @@ add_filter('panel_option_filter_'. $parameters['option_name'], function($options
  * @return array
  */
 add_filter('panel_option_filter_'. $parameters['option_name'], function($options) {
-	
+
 	# array data to be inserted
 	$insert_custom_data = [];
-	
+
 		# TAB - INSERTED Sub-Tab
 		# *****************************************************************************************
 		$insert_custom_data[] = array(
@@ -205,7 +205,7 @@ add_filter('panel_option_filter_'. $parameters['option_name'], function($options
 			'name' => __('INSERTED Sub-Tab [Last]', 'dilaz-panel'),
 			'type' => 'subheading'
 		);
-			
+
 			# FIELDS - INSERTED Sub-Tab fields
 			# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 			$insert_custom_data[] = array(
@@ -214,17 +214,17 @@ add_filter('panel_option_filter_'. $parameters['option_name'], function($options
 				'desc' => __('Set multiple options using buttonset.', 'dilaz-panel'),
 				'type' => 'buttonset',
 				'options' => array(
-					'yes'   => __('Yes', 'dilaz-panel'), 
+					'yes'   => __('Yes', 'dilaz-panel'),
 					'no'    => __('No', 'dilaz-panel'),
 					'maybe' => __('Maybe', 'dilaz-panel')
 				),
 				'std'  => 'no',
 				'class' => ''
 			);
-			
+
 	$insert = DilazPanelFunctions\DilazPanelFunctions::insertField($options, 'custom_options_main', '', $insert_custom_data, 'last');
-	
+
 	return $insert;
-	
+
 }, 10);
 
